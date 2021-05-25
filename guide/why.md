@@ -1,28 +1,28 @@
-# Why Slidev
+# Почему Slidev
 
-There are a lot of feature-rich, general-purpose, WYSIWYG slides makers like [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) and [Apple Keynote](https://www.apple.com/keynote/). They work pretty well for making nice slides with animations, charts, and many other things, while being very intuitive and easy to learn. So why bother making Slidev?
+Есть множество богатых функционалом, универсальных WYSIWYG редакторов презентаций, таких как [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) и [Apple Keynote](https://www.apple.com/keynote/). Они работает не плохо для создания красивых презентаций с анимациями, графиками, и множества других штук, оставаясь при этом очень интуитивными и легкими в изучении. Так зачем вообще нужен Slidev?
 
-Slidev aims to provide the flexibility and interactivity for developers to make their presentations even more interesting, expressive, and attractive by using the tools and technologies they are already familiar with. 
+Slidev направлен на поддержку гибкости и интерактивности для разработчиков, чтобы делать их презентации более интересными, выразительными и привлекательными. Используя инструменты и технологии, с которыми они уже знакомы. 
 
-When working with WYSIWYG editors, it is easy to get distracted by the styling options. Slidev remedies that by separating the content and visuals. This allows you to focus on one thing at a time, while also being able to reuse the themes from the community. Slidev does not seek to replace other slide deck builders entirely. Rather, it focuses on catering to the developer community.
+При работе с WYSIWYG редакторами очень легко отвлечься на варианты стилизации. Slidev исправляет это, разделяя контент и визуальную часть. Что позволяет вам сфокусироваться на чем-то одном, а также дает возможность переиспользовать темы из сообщества. Slidev не стремится полностью заменить другие конструкторы презентаций. Скорее, он фокусируется на разнообразии сообщества разработчиков новыми возможностями.
 
 ## Slidev
 
 ![](/screenshots/cover.png)
 
-Here are a few of the coolest features of Slidev:
+Это лишь часть ключевых особенностей Slidev:
 
 ## Markdown-based
 
-Slidev uses an extended Markdown format to store and organize your slides in a single plain text file. This lets you focus on making the content. And since the content and styles are separated, this also made it possible to switch between different themes effortlessly.
+Slidev использует расширенный Markdown-формат для хранения и организации ваших презентаций в простом текстовом файле. Это дает вам сфокусироваться на создании контента. Поскольку контент и стили разделены, это позволяет вам переключаться между темами без особых усилий.
 
-Learn more about [Slidev's Markdown Syntax](/guide/syntax).
+Подробнее о [Markdown синтаксисе Slidev](/guide/syntax).
 
-## Themable
+## Темизация
 
-Themes for Slidev can be shared and installed using npm packages. You then apply them with only one line of config.
+Темы для Slidev могут распространяться и устанавливаться, используя npm-пакеты. Вам понадобится одна строка в конфигурации, чтобы применить их.
 
-Check out the [theme gallery](/themes/gallery) or [learn how to write a theme](/themes/write-a-theme).
+Посмотрите [галерею тем](/themes/gallery) или [узнайте, как написать свою тему](/themes/write-a-theme).
 
 ## Developer Friendly
 
@@ -30,17 +30,17 @@ Slidev provides first-class support for code snippets for developers. It support
 
 Learn more about [highlighters](/custom/highlighters) and [Monaco configuration](/custom/config-monaco).
 
-## Fast
+## Скорость
 
-Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [Windi CSS](https://windicss.org/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+Slidev разработан на [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) и [Windi CSS](https://windicss.org/), которые дают вам прекрасный опыт разработки. Каждое внесенное вами изменение **мгновенно** отразится на слайдах.
 
-Find more about [our tech stack](/guide/#tech-stack).
+Почитайте подробнее о [нашем техническом стеке](/guide/#tech-stack).
 
-## Interactive & Expressive
+## Интерактивный и выразительный
 
-You can write custom Vue components and use them directly inside your markdown file. You can also interact with them inside the presentation to express your idea in a more interserting and intuitive way.
+Вы можете написать кастомные Vue-компоненты и использовать их непосредственно внутри вашего markdown-файла. Вы также можете взаимодействовать с ними внутри вашей презентации, чтобы выразить вашу идею в более интересной и интуитивной форме.
 
-## Recording Support
+## Поддержка записи
 
 Slidev provides built-in recording and camera view. You can share your presentation with your camera view inside, or record and save them separately for your screen and camera. All with one go, no additional tools are needed.
 
@@ -56,15 +56,15 @@ Read more about that in the [exporting docs](/guide/exporting).
 
 Being powered by web technologies, anything that can be done in a web app is also possible with Slidev. For example, WebGL, API requests, iframes, or even live sharing. It's up to your imagination!
 
-## Give it a Try
+## Попробуйте сами
 
-Playing around with Slidev will tell you more than a thousand words. You are just one command away:
+Лучше один раз увидеть, чем сто раз услышать – поиграйте со Slidev. Вас отделяет всего одна команда:
 
 ```bash
 $ npm init slidev
 ```
 
-Or have a quick preview of it:
+Или посмотрите демо:
 
 <div class="aspect-9/16 relative">
 <iframe class="rounded w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

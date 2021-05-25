@@ -2,15 +2,15 @@
 
 const Guide = [
   {
-    text: 'Why Slidev',
+    text: 'Почему Slidev',
     link: '/guide/why',
   },
   {
-    text: 'Getting Started',
+    text: 'Руководство',
     link: '/guide/',
   },
   {
-    text: 'Installation',
+    text: 'Установка',
     link: '/guide/install',
   },
   {
@@ -18,11 +18,11 @@ const Guide = [
     link: '/guide/syntax',
   },
   {
-    text: 'Navigation',
+    text: 'Навигация',
     link: '/guide/navigation',
   },
   {
-    text: 'Animations',
+    text: 'Анимации',
     link: '/guide/animations',
   },
   {
@@ -30,7 +30,7 @@ const Guide = [
     link: '/guide/exporting',
   },
   {
-    text: 'Record Presentation',
+    text: 'Запись презентации',
     link: '/guide/recording',
   },
   {
@@ -132,15 +132,15 @@ const Resources = [
 
 const slidebars = [
   {
-    text: 'Guide',
+    text: 'Руководство',
     children: Guide,
   },
   {
-    text: 'Themes',
+    text: 'Темы',
     children: Theme,
   },
   {
-    text: 'Customizations',
+    text: 'Кастомизация',
     children: Customizations,
   },
   {
@@ -182,7 +182,7 @@ module.exports = {
     logo: '/logo.svg',
     docsBranch: 'main',
     editLinks: true,
-    editLinkText: 'Suggest changes to this page',
+    editLinkText: 'Править страницу',
 
     nav: [
       {

@@ -1,10 +1,10 @@
 ---
 home: true
 heroImage: /logo.png
-actionText: Get Started
+actionText: Начать знакомство
 actionLink: /guide/
 
-altActionText: Learn More
+altActionText: Подробнее
 altActionLink: /guide/why
 
 footer: MIT Licensed | Copyright © 2021-PRESENT Anthony Fu
