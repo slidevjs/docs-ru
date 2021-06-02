@@ -200,13 +200,33 @@ export const community: ThemeInfo[] = [
       name: 'Bogenbai Bayzharassov',
       link: 'https://github.com/thatoranzhevyy',
     },
-    repo: 'https://github.com/thatoranzhevyy/slidev-theme-zhozhoban',
+    repo: 'https://github.com/thatoranzhevyy/slidev-theme-zhozhoba',
     previews: [
       'https://github.com/thatoranzhevyy/slidev-theme-zhozhoba/blob/master/slides-export/01.png?raw=true',
       'https://github.com/thatoranzhevyy/slidev-theme-zhozhoba/blob/master/.github/dark.png?raw=true',
       'https://github.com/thatoranzhevyy/slidev-theme-zhozhoba/blob/master/slides-export/02.png?raw=true',
       'https://github.com/thatoranzhevyy/slidev-theme-zhozhoba/blob/master/slides-export/03.png?raw=true',
       'https://github.com/thatoranzhevyy/slidev-theme-zhozhoba/blob/master/slides-export/04.png?raw=true',
+    ],
+    tags: [
+      'dark',
+      'light',
+    ],
+  },
+   {
+    id: 'slidev-theme-penguin',
+    name: 'Penguin',
+    description: 'A Penguin theme for Slidev',
+    author: {
+      name: 'Alvaro Saburido (alvarosaburido)',
+      link: 'https://github.com/alvarosaburido',
+    },
+    repo: 'https://github.com/alvarosaburido/slidev-theme-penguin',
+    previews: [
+      'https://raw.githubusercontent.com/alvarosaburido/slidev-theme-penguin/master/screenshots/dark/01.png',
+      'https://raw.githubusercontent.com/alvarosaburido/slidev-theme-penguin/master/screenshots/light/02.png',
+      'https://raw.githubusercontent.com/alvarosaburido/slidev-theme-penguin/master/screenshots/light/06.png',
+      'https://raw.githubusercontent.com/alvarosaburido/slidev-theme-penguin/master/screenshots/light/05.png',
     ],
     tags: [
       'dark',

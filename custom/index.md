@@ -41,7 +41,7 @@ info: |
 ---
 ```
 
-Check out the [type definitions](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L16) for more options.
+Check out the [type definitions](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29) for more options.
 
 ## Структура папок
 
@@ -49,10 +49,12 @@ Slidev использует структуру папок для минимал�
 
 Подробнее в [Структура проекта](/custom/directory-structure).
 
-## `vite.config.ts`
+## Config Tools
 
-Подробнее в [Конфигурация Vite](/custom/config-vite).
-
-## `windicss.config.ts`
-
-Подробнее в [Конфигурация Windi CSS](/custom/config-windicss).
+- [Highlighters](/custom/highlighters)
+- [Configure Vue](/custom/config-vue)
+- [Configure Vite](/custom/config-vite)
+- [Configure Windi CSS](/custom/config-windicss)
+- [Configure Monaco](/custom/config-monaco)
+- [Configure KaTeX](/custom/config-katex)
+- [Configure Mermaid](/custom/config-mermaid)
