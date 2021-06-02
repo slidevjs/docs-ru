@@ -7,7 +7,7 @@ defineProps<{ type: 'node' | 'client' }>()
 <template>
   <details class="px-4 py-3 mt-4 rounded bg-gray-400 bg-opacity-10">
     <summary class="outline-none">
-      Environment:
+      Окружение:
       <span class="capitalize" :class="type === 'node' ? 'text-orange-400' : 'text-green-400'">{{ type }}</span>
     </summary>
 

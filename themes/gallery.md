@@ -1,16 +1,16 @@
-# Themes Gallery
+# Галерея тем
 
 Browse awesome themes available for Slidev here.
 
 Read more about [how to use a theme](/themes/use), or [how to write your own](/themes/write-a-theme) and share with the community!
 
-## Official Themes
+## Официальные темы
 
 <ClientOnly>
   <ThemeGallery collection="official"/>
 </ClientOnly>
 
-## Community Themes
+## Темы сообщества
 
 Here are the curated themes made by the community.
 

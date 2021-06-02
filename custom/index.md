@@ -1,6 +1,6 @@
-# Customizations
+# Кастомизация
 
-Slidev is fully customizable, from styling to tooling configurations. It allows you to configure the tools underneath ([Vite](/custom/config-vite), [Windi CSS](/custom/config-windicss), [Monaco](/custom/config-monaco), etc.)
+Slidev полностью кастомизируем, начиная от стилей, заканчивая инструментами конфигурации. Это позволяет вам сконфигурировать инструменты под ([Vite](/custom/config-vite), [Windi CSS](/custom/config-windicss), [Monaco](/custom/config-monaco), и т.д.)
 
 ## Frontmatter Configures
 
@@ -43,16 +43,16 @@ info: |
 
 Check out the [type definitions](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L16) for more options.
 
-## Directory Structure
+## Структура папок
 
-Slidev uses directory structure conventions to minimalize the configuration surface and make extensions in functionality flexible and intuitive.
+Slidev использует структуру папок для минимальной и поверхностной конфигурации, и делает расширения в функциональности гибкими и интуитивными.
 
-Refer to the [Directory Structure](/custom/directory-structure) section.
+Подробнее в [Структура проекта](/custom/directory-structure).
 
 ## `vite.config.ts`
 
-Refer to the [Configure Vite](/custom/config-vite) section.
+Подробнее в [Конфигурация Vite](/custom/config-vite).
 
 ## `windicss.config.ts`
 
-Refer to the [Configure Windi CSS](/custom/config-windicss) section.
+Подробнее в [Конфигурация Windi CSS](/custom/config-windicss).

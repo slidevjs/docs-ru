@@ -1,4 +1,4 @@
-# Write a Theme
+# Написание темы
 
 To get started, we recommend you use our generator for scaffolding your first theme
 

@@ -22,7 +22,7 @@ const Guide = [
     link: '/guide/navigation',
   },
   {
-    text: 'Анимации',
+    text: 'Анимация',
     link: '/guide/animations',
   },
   {
@@ -53,11 +53,11 @@ const Theme = [
     link: '/themes/use',
   },
   {
-    text: 'Theme Gallery',
+    text: 'Галерея тем',
     link: '/themes/gallery',
   },
   {
-    text: 'Write a Theme',
+    text: 'Написание темы',
     link: '/themes/write-a-theme',
   },
 ]
@@ -82,11 +82,11 @@ const Translations = [
 
 const Customizations = [
   {
-    text: 'Customizations',
+    text: 'Кастомизация',
     link: '/custom/',
   },
   {
-    text: 'Directory Structure',
+    text: 'Структура папок',
     link: '/custom/directory-structure',
   },
   {
@@ -94,34 +94,34 @@ const Customizations = [
     link: '/custom/highlighters',
   },
   {
-    text: 'Configure Vue',
+    text: 'Конфигурация Vue',
     link: '/custom/config-vue',
   },
   {
-    text: 'Configure Vite',
+    text: 'Конфигурация Vite',
     link: '/custom/config-vite',
   },
   {
-    text: 'Configure Windi CSS',
+    text: 'Конфигурация Windi CSS',
     link: '/custom/config-windicss',
   },
   {
-    text: 'Configure Monaco',
+    text: 'Конфигурация Monaco',
     link: '/custom/config-monaco',
   },
   {
-    text: 'Configure KaTeX',
+    text: 'Конфигурация KaTeX',
     link: '/custom/config-katex',
   },
   {
-    text: 'Configure Mermaid',
+    text: 'Конфигурация Mermaid',
     link: '/custom/config-mermaid',
   },
 ]
 
 const Resources = [
   {
-    text: 'Showcases',
+    text: 'Примеры',
     link: '/showcases',
   },
   {
@@ -144,14 +144,14 @@ const slidebars = [
     children: Customizations,
   },
   {
-    text: 'Built-in',
+    text: 'Встроенное',
     children: [
       {
-        text: 'Components',
+        text: 'Компоненты',
         link: '/builtin/components',
       },
       {
-        text: 'Layouts',
+        text: 'Шаблоны',
         link: '/builtin/layouts',
       },
     ],
@@ -182,23 +182,23 @@ module.exports = {
     logo: '/logo.svg',
     docsBranch: 'main',
     editLinks: true,
-    editLinkText: 'Править страницу',
+    editLinkText: 'Редактировать страницу',
 
     nav: [
       {
-        text: 'Guide',
+        text: 'Руководство',
         items: Guide,
       },
       {
-        text: 'Theme',
+        text: 'Темы',
         items: Theme,
       },
       {
-        text: 'Customize',
+        text: 'Кастомизация',
         items: Customizations,
       },
       {
-        text: 'Resources',
+        text: 'Ресурсы',
         items: Resources,
       },
       {

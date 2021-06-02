@@ -2,7 +2,7 @@
 
 ## Введение
 
-Slidev <sup>(slide + dev, произносится `/slʌɪdɪv/`)</sup> – это веб-конструктор презентаций и их показа. Предназначен для разработчиков с фокусировкой на написание контента в Markdown-файлах while also having the power of HTML and Vue components to deliver pixel-perfect layouts and designs with embedded interactive demos in your presentations.
+Slidev <sup>(slide + dev, произносится `/slʌɪdɪv/`)</sup> – это веб-конструктор презентаций и их просмотра. Предназначен для разработчиков с фокусировкой на написание контента в Markdown-файлах, в то же время используя HTML и Vue компоненты для реализации pixel-perfect шаблонов и дизайна со вставками интерактивных демо в ваши презентации.
 
 It uses a feature-rich markdown file to generate beautiful slides with an instant reloading experience, along with many built-in integrations such as live coding, PDF exporting, presentation recording, and so on. Since it's powered by the web, you can do anything with Slidev - the possibilities are endless.
 
@@ -25,29 +25,29 @@ You can learn more about the rationale behind the project in the [Why Slidev](/g
 - ⚡️ [**Fast**](https://vitejs.dev) - instant reloading powered by [Vite](https://vitejs.dev)
 - 🛠 [**Hackable**](/custom/config-vite.html) - using Vite plugins, Vue components, or any npm packages
 
-### Tech Stack
+### Технический стек
 
-Slidev is made possible by combining these tools and technologies.
+Slidev разработан благодаря комбинации этих инструментов и технологий.
 
-- [Vite](https://vitejs.dev) - An extremely fast frontend tooling
-- [Vue 3](https://v3.vuejs.org/) powered [Markdown](https://daringfireball.net/projects/markdown/syntax) - Focus on the content while having the power of HTML and Vue components whenever needed
+- [Vite](https://vitejs.dev) - Чрезвыйчайно быстрый инструмент frontend разработки
+- [Vue 3](https://v3.vuejs.org/) на основе [Markdown](https://daringfireball.net/projects/markdown/syntax) - Фокусировка на контенте, при этом используя всю мощность HTML и Vue компонентов в любом месте
 - [Windi CSS](https://github.com/windicss/windicss) - On-demand utility-first CSS framework, style your slides at ease
 - [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - First-class code snippets support with live coding capability
 - [RecordRTC](https://recordrtc.org) - Built-in recording and camera view
-- [VueUse](https://vueuse.org) family -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.
-- [Iconify](https://iconify.design/) - Iconsets collection.
+- [VueUse](https://vueuse.org) семейство -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), и т.д.
+- [Iconify](https://iconify.design/) - Iconsets коллекция.
 - [KaTeX](https://katex.org/) - LaTeX math rendering.
-- [Mermaid](https://mermaid-js.github.io/mermaid) - Textual Diagrams.
+- [Mermaid](https://mermaid-js.github.io/mermaid) - Текстовые диаграммы.
 
-### Scaffolding Your First Presentation
+### Создание вашей первой презентации
 
-With NPM:
+Через NPM:
 
 ```bash
 $ npm init slidev
 ```
 
-With Yarn:
+Через Yarn:
 
 ```bash
 $ yarn create slidev
@@ -77,7 +77,7 @@ $ npx slidev
 
 Run `slidev --help` for more options available.
 
-### Markdown Syntax
+### Markdown синтакс
 
 Slidev reads your `slides.md` file under your project root and converts them into slides. Whenever you made changes to it, the content of the slides will be updated immediately. For example:
 

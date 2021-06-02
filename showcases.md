@@ -2,9 +2,9 @@
 sidebar: false
 ---
 
-# Showcases
+# Примеры
 
-Talks / Presentations using Slidev.
+Презентации сделанные на Slidev.
 
 <!-- Edit in ./docs/.vitepress/showcases.ts -->
 <ShowCases />

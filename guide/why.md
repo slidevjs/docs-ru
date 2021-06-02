@@ -1,6 +1,6 @@
 # Почему Slidev
 
-Есть множество богатых функционалом, универсальных WYSIWYG редакторов презентаций, таких как [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) и [Apple Keynote](https://www.apple.com/keynote/). Они работает не плохо для создания красивых презентаций с анимациями, графиками, и множества других штук, оставаясь при этом очень интуитивными и легкими в изучении. Так зачем вообще нужен Slidev?
+Есть множество богатых функционалом, универсальных WYSIWYG редакторов презентаций, например [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) и [Apple Keynote](https://www.apple.com/keynote/). Они не плохо работают для создания красивых презентаций с анимациями, графиками, и множества других штук, оставаясь при этом очень интуитивными и легкими в изучении. Так зачем вообще нужен Slidev?
 
 Slidev направлен на поддержку гибкости и интерактивности для разработчиков, чтобы делать их презентации более интересными, выразительными и привлекательными. Используя инструменты и технологии, с которыми они уже знакомы. 
 
@@ -14,7 +14,7 @@ Slidev направлен на поддержку гибкости и интер
 
 ## Markdown-based
 
-Slidev использует расширенный Markdown-формат для хранения и организации ваших презентаций в простом текстовом файле. Это дает вам сфокусироваться на создании контента. Поскольку контент и стили разделены, это позволяет вам переключаться между темами без особых усилий.
+Slidev использует расширенный Markdown формат для хранения и организации ваших презентаций в простом текстовом файле. Это дает вам сфокусироваться на создании контента. Поскольку контент и стили разделены, это позволяет вам переключаться между темами без особых усилий.
 
 Подробнее о [Markdown синтаксисе Slidev](/guide/syntax).
 
@@ -24,7 +24,7 @@ Slidev использует расширенный Markdown-формат для 
 
 Посмотрите [галерею тем](/themes/gallery) или [узнайте, как написать свою тему](/themes/write-a-theme).
 
-## Developer Friendly
+## Удобство разработки
 
 Slidev provides first-class support for code snippets for developers. It supports both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki) to get pixel perfect syntax highlighting, while still being able to modify the code at any time. With [Monaco editor](https://microsoft.github.io/monaco-editor/) built-in, it also empowers you to do live coding / demonstration in your presentation with autocompletion, type hovering, and even TypeScript type check support.
 
@@ -32,13 +32,13 @@ Learn more about [highlighters](/custom/highlighters) and [Monaco configuration]
 
 ## Скорость
 
-Slidev разработан на [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) и [Windi CSS](https://windicss.org/), которые дают вам прекрасный опыт разработки. Каждое внесенное вами изменение **мгновенно** отразится на слайдах.
+Slidev разработан на [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) и [Windi CSS](https://windicss.org/), которые в совокупности дают прекрасный опыт разработки. Каждое внесенное вами изменение **мгновенно** отразится на слайдах.
 
 Почитайте подробнее о [нашем техническом стеке](/guide/#tech-stack).
 
-## Интерактивный и выразительный
+## Интерактивность
 
-Вы можете написать кастомные Vue-компоненты и использовать их непосредственно внутри вашего markdown-файла. Вы также можете взаимодействовать с ними внутри вашей презентации, чтобы выразить вашу идею в более интересной и интуитивной форме.
+Вы можете написать кастомные Vue-компоненты и использовать их непосредственно внутри вашего markdown-файла. Вы также можете взаимодействовать с ними внутри вашей презентации, чтобы исполнить вашу идею в более интересной и интуитивной форме.
 
 ## Поддержка записи
 
@@ -46,15 +46,15 @@ Slidev provides built-in recording and camera view. You can share your presentat
 
 Learn more about [recording here](/guide/recording).
 
-## Portable
+## Портативность
 
-Export your slides into PDF, PNGs, or even a hostable Single-page Application (SPA) with a single command, and share them anywhere.
+Экспортируйте ваши слайды в PDF, PNGs, или даже a hostable Single-page Application (SPA) with a single command, and share them anywhere.
 
 Read more about that in the [exporting docs](/guide/exporting).
 
-## Hackable
+## Расширяемость
 
-Being powered by web technologies, anything that can be done in a web app is also possible with Slidev. For example, WebGL, API requests, iframes, or even live sharing. It's up to your imagination!
+Будучи сделанным на веб-технологиях, все что вы можете сделать в веб-приложение – можно реализовать и в Slidev. Например: WebGL, API запросы, iframes, или даже live sharing. Все зависит от вашего воображения!
 
 ## Попробуйте сами
 
