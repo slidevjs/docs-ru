@@ -1,6 +1,6 @@
-# Анимации
+# Анимация
 
-## Анимации по клику
+## Анимация по клику
 
 ### `v-click`
 
@@ -37,10 +37,10 @@
 
 ### `v-click-hide`
 
-Same as `v-click` but instead of making the element appear, it makes the element invisible after clicking.
+То же, что и `v-click`, но вместо того, чтобы отображать элемент, он скроет его после клика.
 
 ```md
-<div v-click-hide>Hello</div>
+<div v-click-hide>Привет</div>
 ```
 
 ### `v-clicks`

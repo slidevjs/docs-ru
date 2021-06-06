@@ -1,56 +1,56 @@
-# Global Layers
+# Глобальные слои
 
-> Available since v0.17
+> Доступно с версии v0.17
 
-Global layers allow you to have custom components that **persistent** across slides. This could be useful for having footers, cross-slides animations, global effects, etc.
+Глобальные слои позволяют иметь кастомные компоненты, **постоянно** доступные в слайдах. Это может быть полезно для футера, анимации смены слайдов, глобальных эффектов и т.д.
 
-Slidev provides two layers for this usage, create `global-top.vue` or `global-bottom.vue` under your project root and it will pick up automatically.
+Slidev предоставляет два слоя для этого: создайте `global-top.vue` или `global-bottom.vue` в корне вашего проекта, и он будет загружен автоматически.
 
-Layers relationship:
+Связь слоев:
 
-- Global Top (`global-top.vue`)
-- Slides
-- Global Bottom (`global-bottom.vue`)
+- Глобальный Top (`global-top.vue`)
+- Слайды
+- Глобальный Bottom (`global-bottom.vue`)
 
-## Example
+## Примеры
 
 ```html
 <!-- global-top.vue -->
 <template>
-  <footer class="absolute bottom-0 left-0 right-0 p-2">Your Name</footer>
+  <footer class="absolute bottom-0 left-0 right-0 p-2">Ваше имя</footer>
 </template>
 ```
 
-The text `Your Name` will appear to all your slides.
+Текст `Ваше имя` будет отображаться на всех ваших слайдах.
 
-To enabled it conditionally, you can apply it with the [Vue Global Context](/custom/vue-context).
+Чтобы использовать при определенных условиях, вы можете применить его с помощью [глобального контекста Vue](/custom/vue-context).
 
 ```html
-<!-- hide the footer from Page 4 -->
+<!-- футер будет скрыт на четвертой странице -->
 <template>
   <footer
     v-if="$slidev.nav.currentPage !== 4"
     class="absolute bottom-0 left-0 right-0 p-2"
   >
-    Your Name
+    Ваше имя
   </footer>
 </template>
 ```
 
 ```html
-<!-- hide the footer from "cover" layout -->
+<!-- футер будет скрыт на "обложке" шаблона -->
 <template>
   <footer
     v-if="$slidev.nav.currentLayout !== 'cover'"
     class="absolute bottom-0 left-0 right-0 p-2"
   >
-    Your Name
+    Ваше имя
   </footer>
 </template>
 ```
 
 ```html
-<!-- an example footer for pages -->
+<!-- пример футера для отображения страниц -->
 <template>
   <footer
     v-if="$slidev.nav.currentLayout !== 'cover'"

@@ -117,15 +117,15 @@ canvasWidth: 800
 ---
 ```
 
-### Use Transform
+### Использование трансформации
 
-We provide a built-in component `<Transform />`, which is a thin wrapper of CSS transform property.
+Мы предоставляем встроенный компонент `<Transform />`, который представляет из себя обертку над CSS свойством трансформации.
 
 ```md
 <Tranform :scale="1.4">
 
-- Item 1
-- Item 2
+- Пункт 1
+- Пункт 2
 
 </Transform>
 ```

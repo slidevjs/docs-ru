@@ -1,44 +1,44 @@
-# Fonts
+# Шрифты
 
-> Available since v0.19.3
+> Доступно с версии v0.19.3
 
-While you can use HTML and CSS to custom the fonts and style for your slides as you want, Slidev also provides a convenient way to use them effortlessly.
+Хотя вы можете использовать HTML и CSS для настройки шрифтов и стилей для своих слайдов, Slidev также предоставляет удобный способ их использования без особых усилий.
 
-In your fontmatter, configure as following
+В вашем fontmatter настройте следующим образом
 
 ```yaml
 ---
 fonts:
-  # basically the text
+  # основной текст
   sans: 'Robot'
-  # use with `font-serif` css class from windicss
+  # использование с css классом `font-serif` от windicss
   serif: 'Robot Slab'
-  # for code blocks, inline code, etc.
+  # для блоков кода, inline-кода и т.д.
   mono: 'Fira Code'
 ---
 ```
 
-And that's all.
+И это все.
 
-Fonts will be **imported automatically from [Google Fonts](https://fonts.google.com/)**. That means you can use any fonts available on Google Fonts directly.
+Шрифты будут **автоматически импортированы из [Google Fonts](https://fonts.google.com/)**. Это означает, что вы можете напрямую использовать любые шрифты, доступные в Google Fonts.
 
-## Local Fonts
+## Локальные шрифты
 
-By default, Slidev assumes all the fonts specified via `fonts` configurations come from Google Fonts. If you want to use local fonts, specify the `fonts.local` to opt-out the auto-importing. 
+По умолчанию Slidev считает, что все шрифты, указанные в конфигурациях `fonts`, взяты из Google Fonts. Если вы хотите использовать локальные шрифты, укажите `fonts.local`, чтобы отключить автоматический импорт.
 
 ```yaml
 ---
 fonts:
-  # like font-family in css, you can use `,` to separate multiple fonts for fallback
+  # вы можете использовать `,` чтобы использовать несколько шрифтов для fallback'а (как font-family в css)
   sans: 'Helvetica Neue,Robot'
-  # mark 'Helvetica Neue' as local font
+  # пометить 'Helvetica Neue' как локальный шрифт
   local: 'Helvetica Neue'
 ---
 ```
 
-## Fallback Fonts
+## Fallback шрифтов
 
-For most of the scenarios, you only need to specify the "special font" and Slidev will append the fallback fonts for you, for example:
+Для большинства сценариев вам нужно только указать «специальный шрифт», и Slidev добавит вам fallback шрифты, например:
 
 ```yaml
 ---
@@ -49,7 +49,7 @@ fonts:
 ---
 ```
 
-will result in 
+сбилдится в
 
 ```css
 .font-sans {
@@ -63,7 +63,7 @@ will result in
 }
 ```
 
-If you want to disable the fallback fonts, configure as following
+Если вы хотите отключить fallback шрифты, то настройте следующим образом
 
 ```yaml
 ---
@@ -73,12 +73,12 @@ fonts:
 ---
 ```
 
-## Providers
+## Провайдеры
 
-- Options: `google` | `none`
-- Default: `google`
+- Параметры: `google` | `none`
+- По умолчанию: `google`
 
-Currently, only Google Fonts is supported, we are planned to add more providers in the future. Specify to `none` will disable the auto-importing feature entirely and treat all the fonts local.
+В настоящее время поддерживаются только Google Fonts, в будущем мы планируем добавить больше провайдеров. Если указать `none`, то функция автоимпорта будет полностью отключена, и все шрифты будут обрабатываться локально.
 
 ```yaml
 ---

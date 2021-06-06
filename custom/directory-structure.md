@@ -179,9 +179,9 @@ import './layouts.css'
 </html>
 ```
 
-## Global Layers
+## Глобальные слои
 
-Conventions: `global-top.vue` | `global-bottom.vue`
+Соглашения: `global-top.vue` | `global-bottom.vue`
 
-Learn more: [Global Layers](/custom/global-layers)
+Подробнее: [Глобальные слои](/custom/global-layers)
 
