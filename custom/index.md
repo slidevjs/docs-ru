@@ -4,52 +4,52 @@ Slidev полностью кастомизируем, начиная от сти
 
 ## Frontmatter Configures
 
-You can configure Slidev in the frontmatter of your first slide, the following shows the default value for each option.
+Вы можете настроить Slidev в frontmatter блоке вашего первого слайда, ниже показаны значения по умолчанию для каждого параметра.
 
 ```yaml
 ---
-# theme id or package name
+# id темы или название пакета
 theme: 'default'
-# title of your slide, will auto infer from the first header if not specified
+# заголовок слайда, если не указан, то будет автоматически подставлен из первого найденного заголовка
 title: ''
 
-# enabled pdf downloading in SPA build, can also be a custom url
+# загрузка pdf в SPA сборке, также может содержать кастомный URL
 download: true
-# syntax highlighter, can be 'prism' or 'shiki'
+# подсветка синтаксиса, может быть 'prism' или 'shiki'
 highlighter: 'prism'
-# enable monaco editor, default to dev only
+# включение Monaco редактора, по умолчанию только в дев режиме
 monaco: 'dev'
 
-# force color schema for the slides, could be 'auto', 'light', or 'dark'
+# цветовая схема для слайдов, может быть 'auto', 'light', или 'dark'
 colorSchema: 'auto'
-# router mode for vue-router, could be "history" or "hash"
+# режим роутера для vue-router, может быть 'history' или 'hash'
 routerMode: 'history'
-# aspect ratio for the slides
+# соотношение сторон слайдов
 aspectRatio: '16/9'
-# real width of the canvas, unit in px
+# реальная ширина canvas, единица измерения в пикселях
 canvasWidth: 980
 
-# default frontmatter applies to all slides
+# дефолтные настройки frontmatter для всех слайдов
 defaults:
   layout: 'default'
   # ...
 
-# information for your slides, can be a markdown string
+# информация для слайдов, может быть markdown-строкой
 info: |
   ## Slidev
   My first [Slidev](http://sli.dev/) presentations!
 ---
 ```
 
-Check out the [type definitions](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29) for more options.
+Подробнее в [определении типов](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29).
 
 ## Структура папок
 
-Slidev использует структуру папок для минимальной и поверхностной конфигурации, и делает расширения в функциональности гибкими и интуитивными.
+Slidev использует структуру папок для минимальной и поверхностной конфигурации, и делает расширения гибкими и интуитивными в функциональности.
 
 Подробнее в [Структура проекта](/custom/directory-structure).
 
-## Config Tools
+## Конфигурация инструментов
 
 - [Highlighters](/custom/highlighters)
 - [Configure Vue](/custom/config-vue)

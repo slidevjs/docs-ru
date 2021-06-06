@@ -2,9 +2,9 @@
 
 ## Стартовый шаблон
 
-> Slidev requires [**Node.js >=14.0**](https://nodejs.org/)
+> Для Slidev требуется [**Node.js >=14.0**](https://nodejs.org/)
 
-The best way to get started is using our official starter template.
+Наилучшим способом начать, будет использование нашего официального стартового шаблона.
 
 Через NPM:
 
@@ -18,13 +18,13 @@ $ npm init slidev@latest
 $ yarn create slidev
 ```
 
-Follow the prompts and it will open up the slideshow at http://localhost:3030/ automatically for you.
+Следуйте подсказкам и презентация автоматически откроется на http://localhost:3030/
 
-It also contains the basic setup and a short demo with instructions on how to get started with Slidev.
+Шаблон также содержит базовую настройку и короткую демонстрацию с инструкциями о том, как начать работу со Slidev.
 
 ## Ручная установка
 
-If you still prefer to install Slidev manually or would like to integrate it into your existing projects, you can do:
+Если вы по-прежнему хотите установить Slidev вручную или хотите интегрировать его в свои существующие проекты, вы можете сделать:
 
 ```bash
 $ npm install @slidev/cli @slidev/theme-default
@@ -36,30 +36,30 @@ $ touch slides.md
 $ npx slidev
 ```
 
-> Please note if you are using [pnpm](https://pnpm.io), you will need to enable [shamefully-hoist](https://pnpm.io/npmrc#shamefully-hoist) option for Slidev to work properly:
+> Обратите внимание, если вы используете [pnpm](https://pnpm.io), вам нужно включить [shamefully-hoist](https://pnpm.io/npmrc#shamefully-hoist) опцию для корректной работы Slidev:
 >
 > ```bash
 > echo 'shamefully-flatten=true' >> .npmrc
 > ```
 
-## Install Globally
+## Глобальная установка
 
-From v0.14.0, we shipped **experimental** global installation support. You can install it with the following command 
+Начиная с версии v0.14.0, мы предоставляем **экспериментальную** глобальную установку. Вы можете установить с помощью следующей команды 
 
 ```bash
 $ npm i -g @slidev/cli
 ```
 
-And then use `slidev` everywhere without creating a project every time.
+И далее используйте `slidev` в любом месте, без создания проекта каждый раз.
 
 ```bash
 $ slidev
 ```
 
-This command will also try to use local `@slidev/cli` if it has been found in the `node_modules`.
+Эта команда также попытается использовать локальный `@slidev/cli`, если найдет его в `node_modules`.
 
-## Install on Docker
+## Установка на Docker
 
-If you need a rapid way to run a presentation with containers, you can use the prebuilt [docker](https://hub.docker.com/r/stig124/slidev) image maintained by [stig124](https://github.com/Stig124), or build your own.
+Если вам нужен быстрый способ запуска презентации в контейнерах, вы можете использовать предварительно созданный образ [docker](https://hub.docker.com/r/stig124/slidev), поддерживаемый [stig124](https://github.com/Stig124), либо создать свой собственный.
 
-Refer to the [slidevjs/container repo](https://github.com/slidevjs/container) for more details.
+Более подробно в [slidevjs/container repo](https://github.com/slidevjs/container).

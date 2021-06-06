@@ -1,30 +1,30 @@
 # Directory Structure
 
-Slidev employs some directory structure conventions to minimize the configuration surface and to make the functionality extensions flexible and intuitive.
+Slidev использует некоторые соглашения о структуре каталогов, чтобы минимизировать конфигурацию и сделать расширения функциональности гибкими и интуитивно понятными.
 
-The basic structure is as follows:
+Базовая структура выглядит следующим образом:
 
 ```bash
 your-slidev/
-  ├── components/       # custom components
-  ├── layouts/          # custom layouts
+  ├── components/       # кастомные компоненты
+  ├── layouts/          # кастомные шаблоны
   ├── public/           # static assets
-  ├── setup/            # custom setup / hooks
-  ├── styles/           # custom style
-  ├── index.html        # injections to index.html
-  ├── slides.md         # the main slides entry
-  └── vite.config.ts   # extending vite config
+  ├── setup/            # кастомные настройки / хуки
+  ├── styles/           # кастомные стили
+  ├── index.html        # инъекции в index.html
+  ├── slides.md         # описание слайдов
+  └── vite.config.ts    # расширение конфигурации vite
 ```
 
-All of them are optional.
+Все они необязательны.
 
-## Components
+## Компоненты
 
-Conventions: `./components/*.{vue,js,ts,jsx,tsx,md}`
+Соглашения: `./components/*.{vue,js,ts,jsx,tsx,md}`
 
-Components inside this directory can be directly used in the slides Markdown with the same component name as the file name.
+Компоненты внутри этого каталога можно напрямую использовать в Markdown слайдов с тем же именем компонента, что и имя файла.
 
-For example:
+Например:
 
 ```bash
 your-slidev/
@@ -37,24 +37,24 @@ your-slidev/
 ```md
 <!-- slides.md -->
 
-# My Slide
+# Мой слайд
 
 <MyComponent :count="4"/>
 
-<!-- both namings work -->
+<!-- оба названия работают -->
 
 <hello-world foo="bar">
-  Slot
+  Слот
 </hello-world>
 ```
 
-This feature is powered by [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components), learn more there.
+Эта функция работает благодаря [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components).
 
-Slidev also provides some [built-in components](/builtin/components) for you to use.
+Slidev также предоставляет вам некоторые [встроенные компоненты](/builtin/components).
 
-## Layouts
+## Шаблоны
 
-Conventions: `./layouts/*.{vue,js,ts,jsx,tsx}`
+Соглашения: `./layouts/*.{vue,js,ts,jsx,tsx}`
 
 ```
 your-slidev/
@@ -64,7 +64,7 @@ your-slidev/
       └── my-cool-theme.vue
 ```
 
-You can use any filename for your layout. You then reference your layout in you YAML header using the filename.
+Вы можете использовать любое имя файла для своего макета. Затем вы можете указать его в шаблоне в заголовке YAML, используя имя файла.
 
 ```yaml
 ---
@@ -72,9 +72,9 @@ layout: my-cool-theme
 ---
 ```
 
-If the layout you provide has the same name as a built-in layout or a theme layout, your custom layout will take precedence over the built-in/theme layout. The priority order is `local > theme > built-in`.
+Если шаблон имеет то же имя, что и встроенный шаблон или шаблон темы, то ваш шаблон будет иметь приоритет над ними. Порядок приоритетов - `local > theme > built-in`.
 
-In the layout component, use `<slot/>` for the slide content. For example:
+В компоненте шаблона используйте `<slot/>` для содержимого слайда. Например:
 
 ```html
 <!-- default.vue -->
@@ -87,15 +87,15 @@ In the layout component, use `<slot/>` for the slide content. For example:
 
 ## Public
 
-Conventions: `./public/*`
+Соглашения: `./public/*`
 
-Assets in this directory will be served at root path `/` during dev, and copied to the root of the dist directory as-is. Read more about [Vite's `public` directory](https://vitejs.dev/guide/assets.html#the-public-directory).
+Ресурсы в этой папке будут находиться по корневому пути `/` во время разработки и копироваться в корень каталога dist как есть. Узнайте больше о [`public` каталоге Vite](https://vitejs.dev/guide/assets.html#the-public-directory).
 
-## Style
+## Стили
 
-Conventions: `./style.css` | `./styles/index.{css,js,ts}`
+Соглашения: `./style.css` | `./styles/index.{css,js,ts}`
 
-Files following this convention will be injected to the App root. If you need to import multiple css entries, you can create the following structure and managing the import order yourself.
+Файлы, соответствующие этому соглашению, будут внедрены в корень приложения. Если вам нужно импортировать несколько css записей, вы можете создать следующую структуру и самостоятельно управлять порядком импорта.
 
 ```bash
 your-slidev/
@@ -115,7 +115,7 @@ import './code.css'
 import './layouts.css'
 ```
 
-Styles will be processed by [Windi CSS](http://windicss.org/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://windicss.org/features/directives.html) out-of-box. For example:
+Стили будут обрабатываться через [Windi CSS](http://windicss.org/) и [PostCSS](https://postcss.org/), поэтому вы можете использовать вложенные css стили и [at-директивы](https://windicss.org/features/directives.html) прямо из коробки. Например:
 
 ```less
 .slidev-layout {
@@ -135,15 +135,15 @@ Styles will be processed by [Windi CSS](http://windicss.org/) and [PostCSS](http
 }
 ```
 
-[Learn more about the syntax](https://windicss.org/features/directives.html).
+[Подробнее о синтаксисе](https://windicss.org/features/directives.html).
 
 ## `index.html`
 
-Conventions: `index.html`
+Соглашения: `index.html`
 
-The `index.html` provides the ability to inject meta tags and/or scripts to the main `index.html`
+`index.html` позволяет вставлять метатеги и/или скрипты в основной `index.html`
 
-For example, for the following custom `index.html`:
+Например, для следующего кастомного файла `index.html`:
 
 ```html
 <!-- ./index.html -->
@@ -157,7 +157,7 @@ For example, for the following custom `index.html`:
 </body>
 ```
 
-The final hosted `index.html` will be:
+Финальный файл `index.html` будет выглядеть:
 
 ```html
 <!DOCTYPE html>

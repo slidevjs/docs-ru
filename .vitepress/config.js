@@ -14,7 +14,7 @@ const Guide = [
     link: '/guide/install',
   },
   {
-    text: 'Markdown Syntax',
+    text: 'Markdown синтаксис',
     link: '/guide/syntax',
   },
   {
@@ -26,7 +26,7 @@ const Guide = [
     link: '/guide/animations',
   },
   {
-    text: 'Exporting',
+    text: 'Экспорт',
     link: '/guide/exporting',
   },
   {
@@ -34,11 +34,11 @@ const Guide = [
     link: '/guide/recording',
   },
   {
-    text: 'Presenter Mode',
+    text: 'Режим докладчика',
     link: '/guide/presenter-mode',
   },
   {
-    text: 'Editor Integrations',
+    text: 'Интеграции редакторов',
     link: '/guide/editors',
   },
   {
@@ -49,7 +49,7 @@ const Guide = [
 
 const Theme = [
   {
-    text: 'Use Theme',
+    text: 'Использование тем',
     link: '/themes/use',
   },
   {
@@ -57,14 +57,18 @@ const Theme = [
     link: '/themes/gallery',
   },
   {
-    text: 'Написание темы',
+    text: 'Создание темы',
     link: '/themes/write-a-theme',
   },
 ]
 
 const Translations = [
   {
+    text: 'Русский',
+  },
+  {
     text: 'English',
+    link: 'https://sli.dev{{pathname}}',
   },
   {
     text: '简体中文',
@@ -90,7 +94,7 @@ const Customizations = [
     link: '/custom/directory-structure',
   },
   {
-    text: 'Highlighters',
+    text: 'Подсветка',
     link: '/custom/highlighters',
   },
   {
@@ -125,7 +129,7 @@ const Resources = [
     link: '/showcases',
   },
   {
-    text: 'Curated Covers',
+    text: 'Модерируемые обложки',
     link: '/resources/covers',
   },
 ]
@@ -202,7 +206,7 @@ module.exports = {
         items: Resources,
       },
       {
-        text: 'English',
+        text: 'Русский',
         items: Translations,
       },
     ],

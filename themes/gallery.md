@@ -1,8 +1,8 @@
 # Галерея тем
 
-Browse awesome themes available for Slidev here.
+Просмотрите потрясающие темы, доступные для Slidev.
 
-Read more about [how to use a theme](/themes/use), or [how to write your own](/themes/write-a-theme) and share with the community!
+Узнайте больше о том, [как использовать тему](/themes/use) или [как написать собственную](/themes/write-a-theme) и поделиться ею с сообществом!
 
 ## Официальные темы
 
@@ -12,13 +12,13 @@ Read more about [how to use a theme](/themes/use), or [how to write your own](/t
 
 ## Темы сообщества
 
-Here are the curated themes made by the community.
+А это модерируемые темы, созданные сообществом.
 
 <!-- Edit in ./docs/.vitepress/themes.ts -->
 <ClientOnly>
   <ThemeGallery collection="community"/>
 </ClientOnly>
 
-## More Themes
+## Больше тем
 
-Find all the [themes available on NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme).
+Посмотрите все [темы, доступные на NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme).

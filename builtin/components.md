@@ -2,13 +2,13 @@
 
 ## Встроенные компоненты
 
-> Документация в процессе разработки. Before that, you can take a look at the [source code](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) directly.
+> Документация в процессе разработки. А пока, вы можете взглянуть напрямую [в исходный код](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin).
 
 ## Кастомные компоненты
 
-Создайте папку `components/` в корне вашего проекта, и просто вставьте ваши кастомные Vue-компоненты в нее, после этого вы сможете использовать их по тому же имени в ваших markdown-файлах!
+Создайте папку `components/` в корне вашего проекта, и просто вставьте в нее ваши кастомные Vue-компоненты, после этого вы сможете использовать их по тому же имени в ваших markdown-файлах!
 
-Read more in the [Customization](/custom/directory-structure#components) section.
+Подробнее в разделе [Кастомизация](/custom/directory-structure#components).
 
 ## Компоненты темы
 

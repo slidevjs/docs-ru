@@ -1,55 +1,55 @@
 # FAQ
 
-## Grids
+## Сетки
 
-Since Slidev is based on the Web, you can apply any grid layouts as you want. [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [flexboxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), or even [Masonry](https://css-tricks.com/native-css-masonry-layout-in-css-grid/), you get the full controls.
+Поскольку Slidev испольузет в своей работе интернет, вы можете использовать любые макеты сетки по своему усмотрению. [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [flexboxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), или даже [Masonry](https://css-tricks.com/native-css-masonry-layout-in-css-grid/).
 
-Since we have [Windi CSS](https://windicss.org/) built-in, here is one simple way for you to reference:
+Поскольку у нас есть встроенный [Windi CSS](https://windicss.org/), вот один из простых способов использовать его:
 
 ```html
 <div class="grid grid-cols-2 gap-4">
 <div>
 
-The first column
+Первая колонка
 
 </div>
 <div>
 
-The second column
+Вторая колонка
 
 </div>
 </div>
 ```
 
-Go further, you can customize the size of each columns like:
+Пойдем дальше, вы можете настроить размер каждого столбца:
 
 ```html
 <div class="grid grid-cols-[200px,1fr,10%] gap-4">
 <div>
 
-The first column (200px)
+Первая колонка (200px)
 
 </div>
 <div>
 
-The second column (auto fit)
+Вторая колонка (auto fit)
 
 </div>
 <div>
 
-The third column (10% width to parent container)
+Третья колонка (10% ширины от родительского контейнера)
 
 </div>
 </div>
 ```
 
-Learn more about [Windi CSS Grids](https://windicss.org/utilities/grid.html).
+Подробнее о [Windi CSS сетках](https://windicss.org/utilities/grid.html).
 
-## Positioning
+## Позиционирование
 
-Slides are defined in fixed sizes (default `980x552px`) and scale to fit with the user screen. You can safely use absolute position in your slides as they will scale along with the screen.
+Слайды имеют фиксированный размер (по умолчанию `980x552px`) и масштабируются в соответствии с экраном пользователя. Вы можете безопасно использовать абсолютное позиционирование на своих слайдах, поскольку они будут масштабироваться вместе с экраном.
 
-For example:
+Например:
 
 ```html
 <div class="absolute left-30px bottom-30px">
@@ -57,7 +57,7 @@ This is a left-bottom aligned footer
 </div>
 ```
 
-To change the canvas' actual size, you can pass the `canvasWidth` options in your first frontmatter:
+Чтобы изменить фактический размер холста, вы можете передать параметры `canvasWidth` в вашем первом frontmatter:
 
 ```yaml
 ---
@@ -65,16 +65,16 @@ canvasWidth: 800
 ---
 ```
 
-## Font Size
+## Размер шрифта
 
-If you feel the font size in your slides are too small, you can adjust it in a few ways:
+Если вам кажется, что размер шрифта на слайдах слишком мал, вы можете изменить его несколькими способами:
 
-### Override Local Style
+### Замена локальных стилей
 
-You can override styles for each slide with the inlined `<style>` tag.
+Вы можете переопределить стили для каждого слайда с помощью встроенного тега `<style>`.
 
 ```md
-# Page 1
+# Страница 1
 
 <style>
 h1 {
@@ -84,16 +84,16 @@ h1 {
 
 ---
 
-# Page 2
+# Страница 2
 
-This will not be affected.
+Этот слайд не будет затронут.
 ```
 
-Learn more: [Embedded Styles](/guide/syntax.html#embedded-styles)
+Подробнее: [Встроенные стили](/guide/syntax.html#встроенные-стиnи)
 
-### Override Global Style
+### Замена глобальных стилей
 
-You can provide custom global styles by creating `./style.css`, for example
+Вы можете указать собственные глобальные стили, например, создав `./style.css`
 
 ```css
 /* style.css */ 
@@ -103,16 +103,16 @@ h1 {
 }
 ```
 
-Learn more: [Global Style](/custom/directory-structure.html#style)
+Подробнее: [Глобальные стили](/custom/directory-structure.html#style)
 
-### Scale the Canvas
+### Масштабирование Canvas
 
-Changing the canvas' actual size will scale all your contents(text, images, components, etc.) and slides
+Изменение фактического размера canvas приведет к масштабированию слайдов и всего вашего содержимого (текста, изображений, компонентов и т.д.).
 
 ```yaml
 ---
 # default: 980
-# since the canvas gets smaller, the visual size will become larger
+# поскольку canvas становится меньше, визуальный размер станет больше
 canvasWidth: 800
 ---
 ```

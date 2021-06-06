@@ -1,22 +1,22 @@
-# Highlighters
+# Подсветка
 
-Slidev comes with two syntax highlighter for you to choose from:
+Slidev поставляется с двумя подсветками синтаксиса на выбор:
 
 - [Prism](https://prismjs.com/)
 - [Shiki](https://github.com/shikijs/shiki)
 
-**Prism** is one of the most popular syntax highlighters. The highlighting is done by adding token classes to the code and it's colored using CSS. You can browse through their [official themes](https://github.com/PrismJS/prism-themes), or create/customize one yourself very easily using [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars).
+**Prism** - один из самых популярных инструментов подсветки синтаксиса. Подсветка выполняется путем добавления токенов в виде классов и стилизации их через CSS. Вы можете просмотреть [официальные темы](https://github.com/PrismJS/prism-themes) или очень легко создать/настроить их самостоятельно, используя [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars).
 
-**Shiki**, on the other hand, is a TextMate grammar-powered syntax highlighter. It generates colored tokens, so there is no additional CSS needed. Since it has great grammar support, the generated colors are very accurate, just like what you will see in VS Code. Shiki also comes with [a bunch of built-in themes](https://github.com/shikijs/shiki/blob/master/docs/themes.md). The downside of Shiki is that it also requires TextMate themes (compatible with VS Code theme) to do the highlighting, which can be a bit harder to customize.
+**Shiki**, с другой стороны, представляет собой средство выделения синтаксиса на основе грамматики TextMate. Он генерирует цветовые токены, поэтому дополнительный CSS не требуется. Поскольку он имеет отличную поддержку грамматики, сгенерированные цвета очень точны, как, например, в VS Code. Shiki также поставляется с [набором встроенных тем](https://github.com/shikijs/shiki/blob/master/docs/themes.md). Обратной стороной Shiki является то, что для выделения также требуются темы TextMate (совместимые с темой VS Code), что может быть немного сложнее настроить.
 
-Slidev themes usually support both Prism and Shiki, but depending on the theme you are using, it might only support one of them.
+Темы Slidev обычно поддерживают как Prism, так и Shiki, но в зависимости от темы, которую вы используете, он может поддерживать только одну из них.
 
-When you have the choice, the tradeoff is basically:
+Когда у вас есть выбор, компромисс заключается в следующем:
 
-- **Prism** for easier customization
-- **Shiki** for more accurate highlighting
+- **Prism** – для легкой кастомизации
+- **Shiki** – для более аккуратной подсветки
 
-By default, Slidev uses Prism. You can change it by modifying your frontmatter:
+По умолчанию Slidev использует Prism. Вы можете изменить его в frontmatter:
 
 ```yaml
 ---
@@ -24,15 +24,15 @@ highlighter: shiki
 ---
 ```
 
-## Configure Prism
+## Конфигурация Prism
 
-To configure your Prism, you can just import the theme css or use [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars) to configure themes for both light and dark mode. Refer to its docs for more details.
+Чтобы настроить Prism, вы можете просто импортировать css тему или использовать [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars) для настройки тем как для светлого, так и для темного режима. Обратитесь к документации Prism для получения более подробной информации.
 
-## Configure Shiki
+## Конфигурация Shiki
 
 <Environment type="node" />
 
-Create `./setup/shiki.ts` file with the following content
+Создайте файл `./setup/shiki.ts` со следующим содержанием:
 
 ```ts
 /* ./setup/shiki.ts */
@@ -48,9 +48,9 @@ export default defineShikiSetup(() => {
 })
 ```
 
-Refer to [Shiki's docs](https://github.com/shikijs/shiki/blob/master/docs/themes.md#all-themes) for available theme names.
+Доступные имена тем можно посмотреть в [документации Shiki](https://github.com/shikijs/shiki/blob/master/docs/themes.md#all-themes).
 
-Or if you want to use your own theme:
+Или, если вы хотите использовать свою собственную тему:
 
 ```ts
 /* ./setup/shiki.ts */

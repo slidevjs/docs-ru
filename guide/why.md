@@ -1,6 +1,6 @@
 # Почему Slidev
 
-Есть множество богатых функционалом, универсальных WYSIWYG редакторов презентаций, например [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) и [Apple Keynote](https://www.apple.com/keynote/). Они не плохо работают для создания красивых презентаций с анимациями, графиками, и множества других штук, оставаясь при этом очень интуитивными и легкими в изучении. Так зачем вообще нужен Slidev?
+Есть множество богатых функционалом, универсальных WYSIWYG редакторов презентаций, например [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) или [Apple Keynote](https://www.apple.com/keynote/). Они не плохо работают для создания красивых презентаций с анимациями, графиками, и множества других штук, оставаясь при этом очень интуитивными и легкими в изучении. Так зачем вообще нужен Slidev?
 
 Slidev направлен на поддержку гибкости и интерактивности для разработчиков, чтобы делать их презентации более интересными, выразительными и привлекательными. Используя инструменты и технологии, с которыми они уже знакомы. 
 
@@ -26,9 +26,9 @@ Slidev использует расширенный Markdown формат для 
 
 ## Удобство разработки
 
-Slidev provides first-class support for code snippets for developers. It supports both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki) to get pixel perfect syntax highlighting, while still being able to modify the code at any time. With [Monaco editor](https://microsoft.github.io/monaco-editor/) built-in, it also empowers you to do live coding / demonstration in your presentation with autocompletion, type hovering, and even TypeScript type check support.
+Slidev предоставляет разработчикам первоклассную поддержку фрагментов кода. Он поддерживает как [Prism](https://prismjs.com/), так и [Shiki](https://github.com/shikijs/shiki), чтобы добиться идеальной pixel-perfect подсветки синтаксиса, при этом сохраняя возможность изменять код в любое время. Благодаря встроенному редактору [Monaco](https://microsoft.github.io/monaco-editor/), он также дает вам возможность выполнять кодирование / демонстрацию в реальном времени в вашей презентации с автозаполнением, наведением курсора и даже с поддержкой проверки типов TypeScript.
 
-Learn more about [highlighters](/custom/highlighters) and [Monaco configuration](/custom/config-monaco).
+Узнайте больше о [подсветки](/custom/highlighters) и [конфигурации Monaco](/custom/config-monaco).
 
 ## Скорость
 
@@ -42,9 +42,9 @@ Slidev разработан на [Vite](https://vitejs.dev/), [Vue 3](https://v3
 
 ## Поддержка записи
 
-Slidev provides built-in recording and camera view. You can share your presentation with your camera view inside, or record and save them separately for your screen and camera. All with one go, no additional tools are needed.
+Slidev обеспечивает встроенную запись и просмотр с камеры. Вы можете поделиться своей презентацией с камерой внутри или записать и сохранить их отдельно для экрана и камеры. Все сразу, никаких дополнительных инструментов не требуется.
 
-Learn more about [recording here](/guide/recording).
+Узнайте больше о [записи здесь](/guide/recording).
 
 ## Портативность
 

@@ -13,10 +13,10 @@ defineProps<{ type: 'node' | 'client' }>()
 
     <div class="mt-2 opacity-75">
       <span v-if="type === 'node'">
-        This setup function will only run on Node.js environment, you can have access to Node's API.
+        Эта функция настройки будет работать только на стороне Node.js, вы также можете получить доступ к API Node.
       </span>
       <span v-else>
-        This setup function will only run on client side. Make sure the browser compatibility when importing packages.
+        Эта функция настройки будет работать только на клиентской стороне. При импорте пакетов убедитесь в совместимости браузера.
       </span>
     </div>
   </details>

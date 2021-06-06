@@ -1,38 +1,38 @@
-# Markdown Syntax
+# Markdown синтаксис
 
-Slides are written within **a single markdown file** (by default `./slides.md`). 
+Слайды описываются в **одном markdown-файле** (по дефолту `./slides.md`).
 
-You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [Windi CSS](https://windicss.org) is also supported. Use `---` padded with a new line to separate your slides. 
+Вы можете использовать обычный [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), с дополнительной поддержкой встроенного HTML и Vue-компонентов. Также поддерживается стилизация с использованием [Windi CSS](https://windicss.org). Используйте `---` с добавлением новой строки для разделения слайдов.
 
 ~~~md
 # Slidev
 
-Hello, World!
+Привет, мир!
 
 ---
 
 # Page 2
 
-Directly use code blocks for highlighting
+Использование блоков кода для подсветки
 
 //```ts
-console.log('Hello, World!')
+console.log('Привет, мир!')
 //```
 
 ---
 
 # Page 3
 
-You can directly use Windi CSS and Vue components to style and enrich your slides.
+Вы можете напрямую использовать Windi CSS и Vue-компоненты для стилизации и улучшения своих слайдов.
 
 <div class="p-3">
   <Tweet id="20" />
 </div>
 ~~~
 
-## Front Matter & Layouts
+## Front Matter и Шаблоны
 
-You can specify layouts and other metadata for each slide by converting the separators into [front matter blocks](https://jekyllrb.com/docs/front-matter/). Each front matter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
+Вы можете указать макеты и другие метаданные для каждого слайда, преобразовав разделители в [front matter блоки](https://jekyllrb.com/docs/front-matter/). Каждый front matter блок начинается с тройного тире и заканчивается ими же. Тексты между ними представляют собой объекты данных в [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) формате. Например:
 
 ~~~md
 ---
@@ -41,7 +41,7 @@ layout: cover
 
 # Slidev
 
-This is the cover page.
+Это титульная страница.
 
 ---
 layout: center
@@ -51,30 +51,31 @@ class: 'text-white'
 
 # Page 2
 
-This is a page with the layout `center` and a background image.
+Это страница с макетом `center` и фоновым изображением.
 
 ---
 
 # Page 3
 
-This is a default page without any additional metadata.
+Это дефолтная страниц без каких-либо дополнительных метаданных.
 ~~~
 
-Refer to [customization](/custom/) for more details.
+Подробная информация описана на странице [кастомизации](/custom/).
 
-## Code Blocks
+## Блоки кода
 
 One big reason I am building Slidev is needing to make my code look just right in the slides. So just as you expected, you can use Markdown flavored code block to highlight your code.
+Одна из главных причин, по которой я создала Slidev – это то, что мой код должен хорошо выглядеть на слайдах. Так, как вы и ожидали, вы можете использовать блоки кода Markdown, чтобы подсветить свой код.
 
 ~~~ts
 //```ts
-console.log('Hello, World!')
+console.log('Привет, мир!')
 //```
 ~~~
 
-### Line Highlighting
+### Подсветка строк
 
-To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1.
+Чтобы выделить определенные строки, просто добавьте номера строк в скобки `{}`. Нумерация строк начинается с 1.
 
 ~~~ts
 //```ts {2,3}
@@ -87,7 +88,7 @@ function add(
 //```
 ~~~
 
-To change the highlight in multiple steps, you can use `|` to separate them. For example
+Чтобы изменить выделение в несколько шагов, вы можете использовать `|` для их разделения. Например
 
 ~~~ts
 //```ts {2-3|5|all}
@@ -100,26 +101,26 @@ function add(
 //```
 ~~~
 
-This will first highlight `a: Ref<number> | number` and `b: Ref<number> | number`, and then `return computed(() => unref(a) + unref(b))` after one click, and lastly, the whole block. Learn more in the [clicks animations guide](/guide/animations).
+Сначала будет выделено `a: Ref<number> | number` и `b: Ref<number> | number`, а затем `return computed(() => unref(a) + unref(b))` после одного клика, и наконец, весь блок. Подробнее в [руководстве анимации по кликам](/guide/animations).
 
-### Monaco Editor
+### Monaco редактор
 
-Whenever you want to do some modification in the presentation, simply add `{monaco}` after the language id — it turns the block into a fully-featured Monaco editor!
+Всякий раз, когда вы хотите внести какие-либо изменения в презентацию, просто добавьте `{monaco}` после указания языка подсветки - это превратит блок в полнофункциональный Monaco редактор!
 
 ~~~ts
 //```ts {monaco}
-console.log('HelloWorld')
+console.log('ПриветМир')
 //```
 ~~~
 
-Learn more about [configuring Monaco](/custom/config-monaco).
+Подробнее в [конфигурации Monaco](/custom/config-monaco).
 
-## Embedded Styles
+## Встроенные стили
 
-You can use `<style>` tag in your Markdown directly to override styles for the **current slide**.
+Вы можете использовать тег `<style>` напрямую в Markdown, чтобы переопределить стили для **текущего слайда**.
 
 ```md
-# This is Red
+# Это красный заголовок
 
 <style>
 h1 {
@@ -129,17 +130,17 @@ h1 {
 
 ---
 
-# Next slide is not affected
+# На следующем слайде стили заголовка останутся прежними
 ```
 
-`<style>` tag in Markdown is always [scoped](https://vue-loader.vuejs.org/guide/scoped-css.html). To have global style overrides, check out the [customization section](/custom/directory-structure#style).
+Тег `<style>` в Markdown всегда является [scoped](https://vue-loader.vuejs.org/guide/scoped-css.html). Чтобы изменить глобальные стили, прочтите [раздел кастомизации](/custom/directory-structure#style).
 
-Powered by [Windi CSS](https://windicss.org), you can directly use nested css and [directives](https://windicss.org/features/directives.html) (e.g. `@apply`)
+Работая с [Windi CSS](https://windicss.org), вы можете напрямую использовать вложенные CSS и [directives](https://windicss.org/features/directives.html) (например, `@apply`)
 
 ```md
 # Slidev
 
-> Hello `world`
+> Привет, `мир`
 
 <style>
 blockquote {
@@ -150,54 +151,55 @@ blockquote {
 </style>
 ```
 
-## Notes
+## Заметки
 
-You can also take notes for each slide. They will show up in [Presenter Mode](/guide/presenter-mode) for you to reference during presentations.
+Вы также можете делать заметки для каждого слайда. Они будут отображаться в [Режиме презентации](/guide/presenter-mode), чтобы вы могли ссылаться на них во время презентаций.
 
-In Markdown, the last comment block in each slide will be treated as a note.
+В Markdown последний блок комментария в каждом слайде будет считаться как примечание.
+
 
 ~~~md
 ---
 layout: cover
 ---
 
-# Page 1
+# Страница 1
 
-This is the cover page.
+Это титульная страница.
 
-<!-- This is a note -->
+<!-- Это заметка -->
 
 ---
 
-# Page 2
+# Страница 2
 
-<!-- This is NOT a note because it precedes the content of the slide -->
+<!-- Это НЕ заметка, потому что стоит перед содержанием слайда. -->
 
-The second page
+Это вторая страница
 
 <!--
-This is another note
+А это другая заметка
 -->
 ~~~
 
-## Icons
+## Иконки
 
-Slidev allows you to have the accessing to almost all the popular open-source iconsets **directly** in your markdown. Powered by [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) and [Iconify](https://iconify.design/).
+Slidev позволяет вам получить доступ практически ко всем популярным наборам иконок с открытым исходным кодом **прямо** в вашем markdown. Работает это через [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) и [Iconify](https://iconify.design/).
 
-The naming follows [Iconify](https://iconify.design/)'s conversion `{collection-name}-{icon-name}`. For example:
+Именование следует [Iconify](https://iconify.design/) преобразованию `{collection-name}-{icon-name}`. Например:
 
-- `<mdi-account-circle />` - <mdi-account-circle /> from [Material Design Icons](https://github.com/Templarian/MaterialDesign)
-- `<carbon-badge />` - <carbon-badge /> from [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
-- `<uim-rocket />` - <uim-rocket /> from [Unicons Monochrome](https://github.com/Iconscout/unicons)
-- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> from [Twemoji](https://github.com/twitter/twemoji)
-- `<logos-vue />` - <logos-vue /> from [SVG Logos](https://github.com/gilbarbara/logos)
-- And much more...
+- `<mdi-account-circle />` - <mdi-account-circle /> из [Material Design Icons](https://github.com/Templarian/MaterialDesign)
+- `<carbon-badge />` - <carbon-badge /> из [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
+- `<uim-rocket />` - <uim-rocket /> из [Unicons Monochrome](https://github.com/Iconscout/unicons)
+- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> из [Twemoji](https://github.com/twitter/twemoji)
+- `<logos-vue />` - <logos-vue /> из [SVG Logos](https://github.com/gilbarbara/logos)
+- И многое другое...
 
-You can browse and search for all the icons available with [Icônes](https://icones.js.org/).
+Вы можете посмотреть и найти все значки, доступные в [Icônes](https://icones.js.org/).
 
-### Styling Icons
+### Стилизация иконок
 
-You can style the icons just like other HTML elements. For example:
+Вы можете стилизовать иконки так же, как и другие HTML элементы. Например:
 
 ```html
 <uim-rocket />
@@ -209,9 +211,9 @@ You can style the icons just like other HTML elements. For example:
 <uim-rocket class="text-3xl text-red-400 mx-2" />
 <uim-rocket class="text-3xl text-orange-400 animate-ping ml-2" />
 
-## Configurations
+## Конфигурации
 
-All configurations needed can be defined in the Markdown file. For example:
+Все необходимые конфигурации можно определить в Markdown файле. Например:
 
 ```md
 ---
@@ -222,29 +224,28 @@ background: 'https://source.unsplash.com/1600x900/?nature,water'
 
 # Slidev
 
-This is the cover page.
+Это титульная страница.
 ```
 
-Learn more about [frontmatter configurations](/custom/#frontmatter-configures).
+Подробнее о [конфигурации frontmatter](/custom/#frontmatter-configures).
 
 ## LaTeX
 
-Slidev comes with LaTeX support out-of-box, powered by [KaTeX](https://katex.org/).
+Slidev поставляется с встроенной поддержкой LaTeX на базе [KaTeX](https://katex.org/).
 
 <Tweet id="1392246507793915904" />
 
-### Inline
+### Строка
 
-Surround your LaTeX with a single `$` on each side for inline rendering.
+Оберните свое LaTeX выражение одним `$` с каждой стороны для строчного рендеринга.
 
 ```md
 $\sqrt{3x-1}+(1+x)^2$
 ```
 
-### Block
+### Блок
 
-Use two (`$$`) for block rendering. This mode uses bigger symbols and centers
-the result.
+Используйте 2 (`$$`) для блочного рендеринга. В этом режиме используются более крупные символы и результат центрируется.
 
 ```md
 $$
@@ -261,13 +262,13 @@ $$
 $$
 ```
 
-Learn more: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
+Подробнее: [Демо](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
 
-## Diagrams
+## Диаграммы
 
-You can also create diagrams / graphs from textual descriptions in your Markdown, powered by [Mermaid](https://mermaid-js.github.io/mermaid).
+Вы также можете создавать диаграммы / графики из текстовых описаний в вашем Markdown, используя [Mermaid](https://mermaid-js.github.io/mermaid).
 
-Code blocks marked as `mermaid` will be converted to digrams, for example:
+Блоки кода, помеченные как `mermaid`, будут преобразованы в диаграммы, например:
 
 ~~~md
 //```mermaid
@@ -277,7 +278,7 @@ sequenceDiagram
 //```
 ~~~
 
-You can further pass an options object to it to specify the scaling and theming. The syntax of the object is a JavaScript object literal, you will need to add quotes (`'`) for strings and use comma (`,`) between keys.
+Кроме того, вы можете передать ему объект параметров, чтобы указать масштабирование и тему. Синтаксис объекта - это литерал объекта JavaScript, вам нужно будет добавить кавычки (`'`) для строк и использовать запятую (`,`) между ключами.
 
 ~~~md
 //```mermaid {theme: 'neutral', scale: 0.8}
@@ -288,38 +289,38 @@ C -->|Two| E[Result 2]
 //```
 ~~~
 
-Learn more: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
+Подробнее: [Демо](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
 
-## Multiple Entries
+## Множественные вхождения
 
-From v0.15.0, we shipped multi-entries support. This means you can split your `slides.md` into multiple files and organize them as you want.
+Начиная с версии v0.15.0, мы добавили поддержку множественные вхождений. Это означает, что вы можете разделить свой `slides.md` файл на несколько файлов и организовать их по своему усмотрению.
 
 `slides.md` :
 
 ```md
-# Page 1
+# Страница 1
 
-This is a normal page
+Это обычная страница
 
 ---
 src: ./subpage2.md
 ---
 
-<!-- this page will be loaded from './subpage2.md' -->
-Inline content will be ignored
+<!-- эта страница будет загружена из './subpage2.md' -->
+Контент в этом месте будет проигнорирован
 ```
 
 `subpage2.md` :
 
 ```md
-# Page 2
+# Страница 2
 
-This page is from another file
+Эта страница из другого файла
 ```
 
 ### Frontmatter Merging
 
-You can provide frontmatters from both your main entry and external markdown pages. If there are the same keys in them, the ones from the **main entry have the higher priority**. For example
+Вы можете использовать frontmatters как со своей основной страницы, так и с внешней markdown страницы. Если в них есть одинаковые ключи, то **приоритет будут иметь ключи из основной записи**. Например
 
 `slides.md` :
 
@@ -339,12 +340,12 @@ layout: cover
 background: https://sli.dev/foo.png
 ---
 
-# Cover
+# Обложка
 
-Cover Page
+Страница обложки
 ```
 
-They will end up being equivalent of the following page:
+Они будут эквивалентны следующей странице:
 
 ```md
 ---
@@ -353,14 +354,14 @@ background: https://sli.dev/bar.png
 class: text-center
 ---
 
-# Cover
+# Обложка
 
-Cover Page
+Страница обложки
 ```
 
-### Page Reusing
+### Переиспользование страниц
 
-With the multi-entries support, reusing pages could be straightforward. For example:
+Благодаря поддержке множественных вхождений переиспользование страниц может быть довольно простым. Например:
 
 ```yaml
 ---
@@ -376,7 +377,7 @@ src: ./content.md
 ---
 
 ---
-# reuse
+# переиспользование
 src: ./content.md
 ---
 ```

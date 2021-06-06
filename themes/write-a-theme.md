@@ -1,34 +1,34 @@
-# Написание темы
+# Создание темы
 
-To get started, we recommend you use our generator for scaffolding your first theme
+Для начала мы рекомендуем использовать наш генератор для создания вашей первой темы.
 
 ```bash
 $ npm init slidev-theme
 ```
 
-Then you can modify and play with it. You can also refer to the [official themes](/themes/gallery) as examples.
+Затем вы можете изменить и поиграться с ней. Вы также можете посмотреть [официальные темы](/themes/gallery) в качестве примеров.
 
-## Capability
+## Возможности
 
-A theme can contribute to the following points:
+Тема может содержать:
 
-- Global styles
-- Provide web fonts
-- Provide custom layouts or override the existing one
-- Provide custom components or override the existing one
-- Extend Windi CSS configurations
-- Configure tools like Monaco and Prism
+- Глобальные стили
+- Веб-шрифты
+- Кастомные шаблоны, либо переписанные
+- Кастомные компоненты, либо переписанные
+- Расширение конфигураций Windi CSS
+- Настройка таких инструментов, как Monaco или Prism
 
-## Conventions
+## Соглашения
 
-Themes are published to npm registry, and they should follow the conventions below:
+Темы публикуются в реестре npm, и они должны соответствовать приведенным ниже соглашениям:
 
-- Package name should starts with `slidev-theme-`, for example: `slidev-theme-awesome`
-- Add `slidev-theme` and `slidev` in the `keywords` field of your `package.json`
+- Имя пакета должно начинаться с `slidev-theme-`, например: `slidev-theme-awesome`
+- Содержать `slidev-theme` и `slidev` в поле `keywords` вашего `package.json`
 
-## Setup
+## Настройка
 
-To set up the testing playground for your theme, you can create `example.md` with the following frontmatter, to tell Slidev you are not inheriting from any existing theme.
+Чтобы настроить тестовую песочницу для вашей темы, вы можете создать `example.md` со следующим frontmatter, чтобы Slidev не наследовал ни одну из существующих тем.
 
 ```md
 ---
@@ -36,7 +36,7 @@ theme: none
 ---
 ```
 
-Optionally, you can also add some scripts to your `packages.json`
+При желании вы также можете добавить несколько скриптов в свой `packages.json`
 
 ```json
 // package.json
@@ -50,13 +50,13 @@ Optionally, you can also add some scripts to your `packages.json`
 }
 ```
 
-To publish your theme, simply run `npm publish` and you are good to go. There is no build process required (which means you can directly publish `.vue` and `.ts` files, Slidev is smart enough to understand them).
+Чтобы опубликовать свою тему, просто запустите `npm publish`, и все. Процесс сборки не требуется (это означает, что вы можете напрямую публиковать файлы `.vue` и` .ts`, Slidev достаточно умен, чтобы понять их).
 
-Theme contribution points follow the same conventions as local customization, please refer to [the docs for the naming conventions](/custom/). 
+Пункты добавления темы следуют тем же соглашениям, что и локальная настройка, подробнее в [документации по соглашениям об именовании](/custom/).
 
-## Color Schema
+## Цветовая палитра
 
-By default, Slidev assumes themes support both light mode and dark mode. If you only want your theme be presented in a designed color schema, you will need to specify it explicitly in `package.json`
+По умолчанию Slidev предполагает, что темы поддерживают как светлый, так и темный режим. Если вы хотите, чтобы ваша тема была представлена только в разработанной цветовой схеме, вам нужно будет явно указать ее в `package.json`.
 
 ```json
 // package.json
@@ -67,40 +67,40 @@ By default, Slidev assumes themes support both light mode and dark mode. If you 
     "slidev"
   ],
   "slidev": {
-    "colorSchema": "light" // or "dark" or "both"
+    "colorSchema": "light" // или "dark", или "both"
   }
 }
 ```
 
-To access the dark mode when creating your theme styles, you can wrap the dark-mode-specific css inside a `dark` class:
+Чтобы получить доступ к темному режиму при стилизации вашей темы, вы можете обернуть CSS, зависящий от темного режима, внутри класса `dark`:
 
 ```css
-/* general css here */
+/* основные css стили */
 
 html:not(.dark) {
-  /* light mode css here */
+  /* css для светлой темы */
 }
 
 html.dark {
-  /* dark mode css here */
+  /* css для темной темы */
 }
 ```
 
-Slidev toggles a `dark` class on the page's `html` element for switching color schema.
+Slidev переключает класс `dark` в элементе `html` страницы для переключения цветовой схемы.
 
-## Highlighter
+## Подсветка
 
-Syntax highlighting colors are also provided in the theme. We support both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki). For more information please refer to [the syntax highlighting docs](/custom/highlighters).
+В теме также предусмотрены цвета для подсветки синтаксиса. Мы поддерживаем как [Prism](https://prismjs.com/), так и [Shiki](https://github.com/shikijs/shiki). Подробнее в [документации по подсветке синтаксиса](/custom/highlighters).
 
-You can support either one of them, or both. Refer to the default theme for configurations examples [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/styles/prism.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
+Вы можете использовать как один из них, так и оба. Примеры конфигураций дефолтной темы смотрите в [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/styles/prism.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
 
-Also, remember to specify the supported highlighters in your `package.json`
+Также не забудьте указать поддерживаемую подсветку в вашем `package.json`
 
 ```json
 // package.json
 {
   "slidev": {
-    "highlighter": "shiki" // or "prism" or "all"
+    "highlighter": "shiki" // или "prism", или "all"
   }
 }
 ```

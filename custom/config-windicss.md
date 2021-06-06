@@ -1,42 +1,42 @@
-# Configure Windi CSS
+# Конфигурация Windi CSS
 
 <Environment type="node" />
 
-Markdown naturally supports embedded HTML markups. You can therefore style your content the way you want. To provide some convenience, we have [Windi CSS](https://github.com/windicss/windicss) built-in, so you can style markup directly using class utilities. 
+Markdown, естественно, поддерживает встроенные разметки HTML. Таким образом, вы можете стилизовать свой контент так, как захотите. Для некоторого удобства у нас есть встроенный [Windi CSS](https://github.com/windicss/windicss), так что вы можете стилизовать разметку напрямую с помощью Utility-классов.
 
-For example:
+Например:
 
 ```html
 <div class="grid pt-4 gap-4 grids-cols-[100px,1fr]">
 
-### Name
+### Имя
 
-- Item 1
-- Item 2
+- Пункт 1
+- Пункт 2
 
 </div>
 ```
 
-The [Attributify Mode](https://windicss.org/posts/v30.html#attributify-mode) in [Windi CSS v3.0](https://windicss.org/posts/v30.html) is enabled by default.
+[Режим атрибутов](https://windicss.org/posts/v30.html#attributify-mode) в [Windi CSS v3.0](https://windicss.org/posts/v30.html) включен по умолчанию.
 
-## Configurations
+## Конфигурации
 
-To configure Windi CSS, create `setup/windicss.ts` with the following content to extend the builtin configurations
+Чтобы настроить Windi CSS и расширить встроенные конфигурации, создайте `setup/windicss.ts` со следующим содержимым
 
 ```ts
 // setup/windicss.ts
 
 import { defineWindiSetup } from '@slidev/types'
 
-// extending the builtin windicss configurations
+// расширение встроенных конфигураций windicss
 export default defineWindiSetup(() => ({
   shortcuts: {
-    // custom the default background
+    // кастомный дефолтный фон
     'bg-main': 'bg-white text-[#181818] dark:(bg-[#121212] text-[#ddd])',
   },
   theme: {
     extend: {
-      // fonts can be replaced here, remember to update the web font links in `index.html`
+      // здесь можно заменить шрифты, не забудьте обновить ссылки на веб-шрифты в `index.html`
       fontFamily: {
         sans: 'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
         mono: '"Fira Code", monospace',

@@ -1,71 +1,71 @@
-# Animations
+# Анимации
 
-## Click Animations
+## Анимации по клику
 
 ### `v-click`
 
-To apply "click animations" for elements, you can use the `v-click` directive or `<v-click>` components
+Чтобы применить «анимацию по клику» для элементов, вы можете использовать директиву `v-click` или `<v-click>` компоненты
 
 ```md
-# Hello
+# Привет
 
-<!-- Component usage: this will be invisible until you press "next" -->
+<!-- Использование компонента: этот блок не будет видно, пока вы не нажмете "Далее" -->
 <v-click>
 
-Hello World
+Привет, мир!
 
 </v-click>
 
-<!-- Directive usage: this will be invisible until you press "next" the second time -->
+<!-- Использование директивы: этот блок не будет видно, пока вы не нажмете "Далее" второй раз -->
 <div v-click class="text-xl p-2">
 
-Hey!
+Хэй!
 
 </div>
 ```
 
 ### `v-after`
 
-The usage of `v-after` is similar to `v-click` but it will turn the element visible when the previous `v-click` is triggered.
+Использование `v-after` очень похоже на `v-click`, но элемент появится только при срабатывании предыдущего `v-click`.
 
 ```md
-<div v-click>Hello</div>
-<div v-after>World</div>
+<div v-click>Привет</div>
+<div v-after>Мир</div>
 ```
 
-When you click the "next" button, both `Hello` and `World` will show up together.
+Когда вы нажмете кнопку «Далее», `Привет` и `Мир` появятся вместе.
 
 ### `v-clicks`
 
-`v-clicks` is only provided as a component. It's a shorthand to apply the `v-click` directive to all its child elements. It is especially useful when working with lists.
+`v-clicks` используется только как компонент. Это сокращение для директивы `v-click` ко всем ее дочерним элементам. Особенно полезно при работе со списками.
 
 ```md
 <v-clicks>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
+- Пункт 1
+- Пункт 2
+- Пункт 3
+- Пункт 4
 
 </v-clicks>
 ```
 
-An item will become visible each time you click "next".
+Каждый пункт будет отображаться по клику на «Далее».
 
-### Custom Clicks Count
+### Кастомный счетчик кликов
 
-By default, Slidev counts how many steps are needed before going to the next slide. You can override this setting by passing the `clicks` frontmatter option:
+По умолчанию Slidev подсчитывает, сколько шагов нужно сделать, прежде чем перейти к следующему слайду. Вы можете переопределить этот параметр, передав frontmatter опцию `clicks`:
 
 ```yaml
 ---
-# 10 clicks in this slide, before going to the next
+# 10 кликов на этом слайде, прежде чем перейти к следующему
 clicks: 10
 ---
 ```
 
-### Ordering
+### Порядок
 
-Passing the click index to your directives, you can customize the order of the revealing
+Передав индекс кликов в свои директивы, вы можете настроить порядок раскрытия
 
 ```md
 <div v-click>1</div>
@@ -74,7 +74,7 @@ Passing the click index to your directives, you can customize the order of the r
 ```
 
 ```md
-<!-- the order is reversed -->
+<!-- обратный порядок -->
 <div v-click="3">1</div>
 <div v-click="2">2</div>
 <div v-click="1">3</div>
@@ -85,30 +85,30 @@ Passing the click index to your directives, you can customize the order of the r
 clicks: 3
 ---
 
-<!-- visible after 3 clicks -->
+<!-- отобразится после 3 кликов -->
 <v-clicks at="3">
-  <div>Hi</div>
+  <div>Привет</div>
 </v-clicks>
 ```
 
-### Element Transitions
+### Переходы элементов
 
-When you apply the `v-click` directive to your elements, it will attach the class name `slidev-vclick-target` to it. When the elements are hidden, the class name `slidev-vclick-hidden` will also be attached. For example:
-
-```html
-<div class="slidev-vclick-target slidev-vclick-hidden">Text</div>
-```
-
-After a click, it will become
+Когда вы применяете директиву `v-click` к элементам, она добавляет к ним класс `slidev-vclick-target`. Когда элементы скрыты, будет добавлен класс `slidev-vclick-hidden`. Например:
 
 ```html
-<div class="slidev-vclick-target">Text</div>
+<div class="slidev-vclick-target slidev-vclick-hidden">Текст</div>
 ```
 
-By default, a subtle opacity transition is applied to those classes:
+После клика он станет
+
+```html
+<div class="slidev-vclick-target">Текст</div>
+```
+
+По умолчанию к этим классам применяется мягкий переход прозрачности:
 
 ```css
-// the default
+// по умолчанию
 
 .slidev-vclick-target {
   transition: opacity 100ms ease;
@@ -120,9 +120,9 @@ By default, a subtle opacity transition is applied to those classes:
 }
 ```
 
-You can override them to customize the transition effects in your custom stylesheets. 
+Вы можете переопределить их, чтобы настроить эффекты перехода в своих стилях.
 
-For example, you can achieve the scaling up transitions by: 
+Например, вы можете добавить переход масштабирования следующим образом:
 
 ```css
 // styles.css
@@ -136,7 +136,7 @@ For example, you can achieve the scaling up transitions by:
 }
 ```
 
-To specify animations for only certain slide or layout
+Чтобы указать анимацию только для определенного слайда или макета
 
 ```scss
 .slidev-page-7,
@@ -151,11 +151,11 @@ To specify animations for only certain slide or layout
 }
 ```
 
-Learn more about [customizing styles](/custom/directory-structure#style).
+Подробнее в [кастомизации стилей](/custom/directory-structure#style).
 
-## Motion
+## Перемещение
 
-Slidev has [@vueuse/motion](https://motion.vueuse.org/) built-in. You can use the `v-motion` directive to any elements to make apply motion on them. For example
+Slidev имеет встроенный [@vueuse/motion](https://motion.vueuse.org/). Вы можете использовать директиву `v-motion` к любым элементам, чтобы применить к ним перемещение. Например
 
 ```html
 <div
@@ -166,9 +166,9 @@ Slidev has [@vueuse/motion](https://motion.vueuse.org/) built-in. You can use th
 </div>
 ```
 
-The text `Slidev` will move from `-80px` to its original position on initialization.
+Текст `Slidev` переместится с `-80px` в исходное положение при инициализации.
 
-> Note: Slidev preloads the next slide for performance, which means the animations might start before you navigate to the page. To get it works properly, you can disable the preloading for the particular slide
+> Примечание: Slidev предзагружает следующий слайд для повышения производительности, что означает, что анимация может начаться до того, как вы перейдете на страницу. Чтобы она работала правильно, вы можете отключить предварительную загрузку для конкретного слайда.
 >
 > ```md
 > ---
@@ -176,7 +176,7 @@ The text `Slidev` will move from `-80px` to its original position on initializat
 > ---
 > ```
 >
-> Or control the element life-cycle with `v-if` to have fine-grained controls
+> Или управляйте жизненным циклом элемента с помощью `v-if`
 >
 > ```html
 > <div
@@ -188,8 +188,8 @@ The text `Slidev` will move from `-80px` to its original position on initializat
 > </div>
 > ```
 
-Learn mode: [Demo](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/directive-usage.html) | [Presets](https://motion.vueuse.org/presets.html)
+Подробнее: [Демо](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/directive-usage.html) | [Presets](https://motion.vueuse.org/presets.html)
 
-## Pages Transitions
+## Переходы страниц
 
-> Built-in support for slides is NOT YET provided in the current version. We are planning to add support for them in the next major version. Before that, you can still use your custom styles and libraries to do that.
+> Встроенная поддержка слайдов ЕЩЕ НЕ предусмотрена в текущей версии. Мы планируем добавить их в следующей мажорной версии. Но сейчас вы все еще можете использовать свои собственные стили и библиотеки для этого.

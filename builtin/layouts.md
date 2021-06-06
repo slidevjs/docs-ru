@@ -1,15 +1,15 @@
-# Layouts
+# Шаблоны
 
-## Built-in Layouts
+## Встроенные шаблоны
 
-> The documentations of this section is still working in progress. Before that, you can take a look at the [source code](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts) directly.
+> Документация в процессе разработки. А пока, вы можете взглянуть напрямую [в исходный код](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts).
 
-## Custom Layouts
+## Кастомные шаблоны
 
-Create a directory `layouts/` under your project root, and simply put your custom Vue layout components under it.
+Создайте папку `layouts/` в корне вашего проекта, и просто вставьте в нее ваши кастомные Vue-компоненты.
 
-Read more in the [Customization](/custom/directory-structure#layouts) section.
+Подробнее в разделе [Кастомизация](/custom/directory-structure#layouts).
 
-## Theme-provided Layouts
+## Шаблоны темы
 
-Themes can provide layouts or override existing ones. Please read their documentation for what they have provided.
+Темы также могут содержать макеты, либо заменять существующие. Пожалуйста, прочтите документацию, чтобы узнать, что они предоставляют.

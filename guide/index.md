@@ -4,39 +4,39 @@
 
 Slidev <sup>(slide + dev, произносится `/slʌɪdɪv/`)</sup> – это веб-конструктор презентаций и их просмотра. Предназначен для разработчиков с фокусировкой на написание контента в Markdown-файлах, в то же время используя HTML и Vue компоненты для реализации pixel-perfect шаблонов и дизайна со вставками интерактивных демо в ваши презентации.
 
-It uses a feature-rich markdown file to generate beautiful slides with an instant reloading experience, along with many built-in integrations such as live coding, PDF exporting, presentation recording, and so on. Since it's powered by the web, you can do anything with Slidev - the possibilities are endless.
+Он использует многофункциональный markdown-файл для создания красивых слайдов с мгновенной перезагрузкой, а также множество встроенных интеграций, таких как live-кодинг, экспорт PDF, запись презентаций и т.д. Поскольку он работает через интернет, вы можете делать с Slidev все что угодно - возможности безграничны.
 
-You can learn more about the rationale behind the project in the [Why Slidev](/guide/why) section.
+Вы можете узнать больше о создании проекта в разделе [Почему Slidev](/guide/why).
 
 ### Особенности
 
-- 📝 [**Markdown-based**](/guide/syntax.html) - use your favorite editors and workflow
-- 🧑‍💻 [**Developer Friendly**](/guide/syntax.html#code-blocks) - built-in syntax highlighting, live coding, etc.
-- 🎨 [**Themable**](/themes/gallery.html) - theme can be shared and used with npm packages
-- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) on-demand utilities, easy-to-use embedded stylesheets
-- 🤹 [**Interactive**](/custom/directory-structure.html#components) - embedding Vue components seamlessly
-- 🎙 [**Presenter Mode**](/guide/presenter-mode.html) - use another window, or even your phone to control your slides
-- 🧮 [**LaTeX**](/guide/syntax.html#latex) - Built-in LaTeX math equations support
-- 📰 [**Diagrams**](/guide/syntax.html#diagrams) - Creates diagrams with textual descriptions 
-- 🌟 [**Icons**](/guide/syntax.html#icons) - Access to icons from any iconset directly
-- 💻 [**Editors**](/guide/editors.html) - Integrated editor, or [extension for VS Code](https://github.com/slidevjs/slidev-vscode)
-- 🎥 [**Recording**](/guide/recording.html) - built-in recording and camera view
-- 📤 [**Portable**](/guide/exporting.html) - export into PDF, PNGs, or even a hostable SPA
-- ⚡️ [**Fast**](https://vitejs.dev) - instant reloading powered by [Vite](https://vitejs.dev)
-- 🛠 [**Hackable**](/custom/config-vite.html) - using Vite plugins, Vue components, or any npm packages
+- 📝 [**Markdown-based**](/guide/syntax.html) - используйте свои любимые редакторы и рабочие процессы
+- 🧑‍💻 [**Удобство разработки**](/guide/syntax.html#code-blocks) - встроенная подсветка кода, live-кодинг, и т.д.
+- 🎨 [**Темизация**](/themes/gallery.html) - темы могут распространяться и использоваться через npm-пакеты
+- 🌈 [**Стилизация**](/guide/syntax.html#embedded-styles) - благодаря [Windi CSS](https://windicss.org/) очень просто работать со стилями
+- 🤹 [**Интерактивность**](/custom/directory-structure.html#components) - плавное встраивание Vue-компонентов
+- 🎙 [**Режим докладчика**](/guide/presenter-mode.html) - используйте другое окно или даже телефон для управления слайдами
+- 🧮 [**LaTeX**](/guide/syntax.html#latex) - встроенная поддержка LaTeX математических уравнений
+- 📰 [**Диаграммы**](/guide/syntax.html#diagrams) - создание диаграмм с текстовым описанием
+- 🌟 [**Иконки**](/guide/syntax.html#icons) - доступ к иконкам напрямую из любого набора иконок
+- 💻 [**Редакторы**](/guide/editors.html) - встроенные редакторы и [расширения для VS Code](https://github.com/slidevjs/slidev-vscode)
+- 🎥 [**Запись**](/guide/recording.html) - встроенная запись и просмотр камеры
+- 📤 [**Портативность**](/guide/exporting.html) - экспорт в PDF, PNGs, или даже в hostable SPA
+- ⚡️ [**Скорость**](https://vitejs.dev) - мгновенная перезагрузка благодаря [Vite](https://vitejs.dev)
+- 🛠 [**Расширяемость**](/custom/config-vite.html) - использование Vite плагинов, Vue-компонентов, либо других npm-пакетов
 
 ### Технический стек
 
-Slidev разработан благодаря комбинации этих инструментов и технологий.
+Slidev разработан благодаря набору этих инструментов и технологий.
 
-- [Vite](https://vitejs.dev) - Чрезвыйчайно быстрый инструмент frontend разработки
-- [Vue 3](https://v3.vuejs.org/) на основе [Markdown](https://daringfireball.net/projects/markdown/syntax) - Фокусировка на контенте, при этом используя всю мощность HTML и Vue компонентов в любом месте
-- [Windi CSS](https://github.com/windicss/windicss) - On-demand utility-first CSS framework, style your slides at ease
-- [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - First-class code snippets support with live coding capability
-- [RecordRTC](https://recordrtc.org) - Built-in recording and camera view
-- [VueUse](https://vueuse.org) семейство -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), и т.д.
-- [Iconify](https://iconify.design/) - Iconsets коллекция.
-- [KaTeX](https://katex.org/) - LaTeX math rendering.
+- [Vite](https://vitejs.dev) - Чрезвыйчайно быстрый инструмент frontend разработки.
+- [Vue 3](https://v3.vuejs.org/) на основе [Markdown](https://daringfireball.net/projects/markdown/syntax) - Фокусировка на контенте, при этом используя всю мощность HTML и Vue компонентов в любом месте.
+- [Windi CSS](https://github.com/windicss/windicss) - CSS-фреймворк на основе utility-классов, позволяет легко стилизовать слайды.
+- [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Первоклассная поддержка фрагментов кода с возможностью live-кодинг.
+- [RecordRTC](https://recordrtc.org) - Встроенная запись и просмотр камеры.
+- [VueUse](https://vueuse.org) - Набор [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), и т.д.
+- [Iconify](https://iconify.design/) - Коллекция иконок.
+- [KaTeX](https://katex.org/) - Математический рендеринг LaTeX.
 - [Mermaid](https://mermaid-js.github.io/mermaid) - Текстовые диаграммы.
 
 ### Создание вашей первой презентации
@@ -52,53 +52,52 @@ $ npm init slidev
 ```bash
 $ yarn create slidev
 ```
-
-Follow the prompts and start making your slides now! For more details about the markdown syntax, read through the [syntax guide](/guide/syntax).
+Следуйте инструкциям и начните создавать слайды прямо сейчас! Подробнее о markdown-синтаксисе читайте в [руководстве о синтаксисе](/guide/syntax).
 
 ### Command Line Interface
 
-In a project where Slidev is installed, you can use the `slidev` binary in your npm scripts.
+В проекте, где установлен Slidev, вы можете использовать бинарную версию `slidev` в своих npm-скриптах.
 
 ```json
 {
   "scripts": {
-    "dev": "slidev", // start dev server
-    "build": "slidev build", // build for production SPA
-    "export": "slidev export" // export slides to pdf
+    "dev": "slidev", // запуск dev севера
+    "build": "slidev build", // билд SPA для продакшна
+    "export": "slidev export" // экспорт слайдов в pdf
   }
 }
 ```
 
-Otherwise, you can use it with [`npx`](https://www.npmjs.com/package/npx)
+В противном случае вы можете использовать [`npx`](https://www.npmjs.com/package/npx)
 
 ```bash
 $ npx slidev
 ```
 
-Run `slidev --help` for more options available.
+Запустите `slidev --help` для просмотра дополнительный опций.
 
 ### Markdown синтакс
 
-Slidev reads your `slides.md` file under your project root and converts them into slides. Whenever you made changes to it, the content of the slides will be updated immediately. For example:
+Slidev считывает ваш `slides.md` файл в корне проекта и конвертирует его в файлы. Всякий раз, когда вы вносите в него изменения, содержание слайдов будет моментально обновлено. Например:
 
 ~~~md
 # Slidev
 
-Hello World
+Привет, мир!
 
 ---
 
-# Page 2
+# Страница 2
 
-Directly use code blocks for highlighting
+Использование блоков кода для подсветки
 
 //```ts
-console.log('Hello, World!')
+console.log('Привет, мир!')
 //```
 
 ---
 
-# Page 3
+# Страница 3
 ~~~
 
-Read more about the Slidev Markdown syntax in the [syntax guide](/guide/syntax).
+Подробнее о Markdown синтаксисе Slidev читайте в [руководстве по синтаксису](/guide/syntax).
