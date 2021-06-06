@@ -29,6 +29,13 @@ aspectRatio: '16/9'
 # реальная ширина canvas, единица измерения в пикселях
 canvasWidth: 980
 
+# шрифты будут автоматически импортированы из Google fonts
+# Подробнее: https://sli.dev/custom/fonts
+fonts:
+  sans: 'Roboto'
+  serif: 'Roboto Slab'
+  mono: 'Fira Code'
+
 # дефолтные настройки frontmatter для всех слайдов
 defaults:
   layout: 'default'

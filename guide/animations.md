@@ -35,6 +35,14 @@
 
 Когда вы нажмете кнопку «Далее», `Привет` и `Мир` появятся вместе.
 
+### `v-click-hide`
+
+Same as `v-click` but instead of making the element appear, it makes the element invisible after clicking.
+
+```md
+<div v-click-hide>Hello</div>
+```
+
 ### `v-clicks`
 
 `v-clicks` используется только как компонент. Это сокращение для директивы `v-click` ко всем ее дочерним элементам. Особенно полезно при работе со списками.

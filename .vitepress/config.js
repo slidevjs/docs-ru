@@ -94,6 +94,10 @@ const Customizations = [
     link: '/custom/directory-structure',
   },
   {
+    text: 'Шрифты',
+    link: '/custom/fonts',
+  },
+  {
     text: 'Подсветка',
     link: '/custom/highlighters',
   },
@@ -121,6 +125,14 @@ const Customizations = [
     text: 'Конфигурация Mermaid',
     link: '/custom/config-mermaid',
   },
+  {
+    text: 'Vue Global Context',
+    link: '/custom/vue-context',
+  },
+  {
+    text: 'Global Layers',
+    link: '/custom/global-layers',
+  }
 ]
 
 const Resources = [
