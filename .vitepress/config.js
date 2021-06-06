@@ -90,7 +90,7 @@ const Customizations = [
     link: '/custom/',
   },
   {
-    text: 'Структура папок',
+    text: 'Структура каталогов',
     link: '/custom/directory-structure',
   },
   {

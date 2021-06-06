@@ -1,6 +1,6 @@
 # Markdown синтаксис
 
-Слайды описываются в **одном markdown-файле** (по дефолту `./slides.md`).
+Слайды описываются в **одном markdown-файле** (по умолчанию `./slides.md`).
 
 Вы можете использовать обычный [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), с дополнительной поддержкой встроенного HTML и Vue-компонентов. Также поддерживается стилизация с использованием [Windi CSS](https://windicss.org). Используйте `---` с добавлением новой строки для разделения слайдов.
 
@@ -64,7 +64,6 @@ class: 'text-white'
 
 ## Блоки кода
 
-One big reason I am building Slidev is needing to make my code look just right in the slides. So just as you expected, you can use Markdown flavored code block to highlight your code.
 Одна из главных причин, по которой я создала Slidev – это то, что мой код должен хорошо выглядеть на слайдах. Так, как вы и ожидали, вы можете использовать блоки кода Markdown, чтобы подсветить свой код.
 
 ~~~ts

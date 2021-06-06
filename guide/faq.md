@@ -103,7 +103,7 @@ h1 {
 }
 ```
 
-Подробнее: [Глобальные стили](/custom/directory-structure.html#style)
+Подробнее: [Глобальные стили](/custom/directory-structure.html#стиnи)
 
 ### Масштабирование Canvas
 
