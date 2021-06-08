@@ -1,6 +1,10 @@
 # Шрифты
 
+<<<<<<< HEAD
 > Доступно с версии v0.19.3
+=======
+> Available since v0.20
+>>>>>>> e3f2b5b9036a3ee3ae4affad7388d21f15208d7d
 
 Хотя вы можете использовать HTML и CSS для настройки шрифтов и стилей для своих слайдов, Slidev также предоставляет удобный способ их использования без особых усилий.
 
@@ -36,7 +40,28 @@ fonts:
 ---
 ```
 
+<<<<<<< HEAD
 ## Fallback шрифтов
+=======
+## Weights & Italic
+
+By default, Slidev imports three weights `200`,`400`,`600` for each font. You can configure them by:
+
+```yaml
+---
+fonts:
+  sans: 'Robot'
+  # default
+  weights: '200,400,600'
+  # import italic fonts, default `false`
+  italic: false
+---
+```
+
+This configuration applies to all web fonts. For more fine-grained controls of each font's weights, you will need to manually import them with [HTML](/custom/directory-structure.html#index-html) and CSS.
+
+## Fallback Fonts
+>>>>>>> e3f2b5b9036a3ee3ae4affad7388d21f15208d7d
 
 Для большинства сценариев вам нужно только указать «специальный шрифт», и Slidev добавит вам fallback шрифты, например:
 
