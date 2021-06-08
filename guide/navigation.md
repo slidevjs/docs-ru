@@ -14,7 +14,7 @@
 | <kbd>up</kbd> | - |  предыдущий слайд |
 | <kbd>down</kbd> | - | следующий слайд |
 | <kbd>o</kbd> | <carbon-apps class="inline-icon-btn"/> | переключение [обзора слайдов](#slides-overview) |
-| <kbd>d</kbd> | <carbon-sun class="inline-icon-btn"/> <carbon-moon class="inline-icon-btn"/> | переключение темной темы |
+| <kbd>d</kbd> | <carbon-sun class="inline-icon-btn"/> <carbon-moon class="inline-icon-btn"/> | переключение тёмной темы |
 | - | <carbon-user-avatar class="inline-icon-btn"/> | переключение [просмотра камеры](/guide/recording#camera-view) |
 | - | <carbon-video class="inline-icon-btn"/> | [запись](/guide/recording#camera-view) |
 | - | <carbon-user-speaker class="inline-icon-btn"/> | открытие [режима докладчика](/guide/presenter-mode) |

@@ -2,7 +2,7 @@
 
 ## PDF
 
-> Экспорт в PDF или PNG происходит за счет [Playwright](https://playwright.dev) рендеринга. Поэтому вам необходимо установить [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary), чтобы использовать этот функционал.
+> Экспорт в PDF или PNG происходит за счёт [Playwright](https://playwright.dev) рендеринга. Поэтому вам необходимо установить [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary), чтобы использовать этот функционал.
 > Если вы выполняете экспорт в CI, то взгляните на [руководство по playwright CI](https://playwright.dev/docs/ci).
 
 Установите `playwright-chromium`
@@ -39,7 +39,7 @@ $ slidev build
 
 ### Базовый путь
 
-Чтобы развернуть слайды на определенном роуте, вам нужно передать параметр `--base`. Например:
+Чтобы развернуть слайды на определённом роуте, вам нужно передать параметр `--base`. Например:
 
 ```bash
 $ slidev build --base /talks/my-cool-talk/

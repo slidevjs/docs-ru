@@ -17,7 +17,7 @@ Markdown, естественно, поддерживает встроенные 
 </div>
 ```
 
-[Режим атрибутов](https://windicss.org/posts/v30.html#attributify-mode) в [Windi CSS v3.0](https://windicss.org/posts/v30.html) включен по умолчанию.
+[Режим атрибутов](https://windicss.org/posts/v30.html#attributify-mode) в [Windi CSS v3.0](https://windicss.org/posts/v30.html) включён по умолчанию.
 
 ## Конфигурации
 
