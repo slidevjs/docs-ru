@@ -1,10 +1,10 @@
-# Configure Shortcuts
+# Конфигурация горячих клавиш
 
-> Available since v0.20
+> Доступно с версии v0.20
 
 <Environment type="client" />
 
-Create `./setup/shortcuts.ts` with the following content:
+Создайте `./setup/shortcuts.ts` со следующим содержанием:
 
 ```ts
 import { defineShortcutsSetup, NavOperations } from '@slidev/types'
@@ -25,8 +25,8 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 })
 ```
 
-With the setup, you can provide the custom setting for shortcuts mentioned in [Navigation](/guide/navigation#navigation-bar). The above configuration binds next animation or slide to <kbd>enter</kbd> and previous animation or slide to <kbd>backspace</kbd>.
+С помощью этой настройки вы можете задать кастомные горячие клавишы, упомянутые в [Навигации](/guide/navigation#панеnь-навигации). Приведенная выше конфигурация привязывает переход на следующую анимацию или слайд к <kbd>enter</kbd> и переход на предыдущую анимацию или слайд к <kbd>backspace</kbd>.
 
-The configuration function receives an object with some navigation methods, and returns an array containing some shortcut configuration. Refer to the type definitions for more details.
+Функция получает объект с некоторыми методами навигации и возвращает массив, содержащий некоторую конфигурацию горячих клавиш. Посмотрите определения типов для получения более подробной информации.
 
-Refer to [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) for more details about key pressed event.
+Подробнее о событиях нажатия клавиш в [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/).
