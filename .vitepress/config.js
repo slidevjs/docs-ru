@@ -126,6 +126,10 @@ const Customizations = [
     link: '/custom/config-mermaid',
   },
   {
+    text: 'Конфигурация горячих клавиш',
+    link: '/custom/config-shortcuts',
+  },
+  {
     text: 'Глобальный контекст Vue',
     link: '/custom/vue-context',
   },
