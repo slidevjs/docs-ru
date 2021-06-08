@@ -38,11 +38,7 @@ Slidev разработан на [Vite](https://vitejs.dev/), [Vue 3](https://v3
 
 ## Интерактивность
 
-<<<<<<< HEAD
 Вы можете написать кастомные Vue-компоненты и использовать их непосредственно внутри вашего markdown-файла. Вы также можете взаимодействовать с ними внутри вашей презентации, чтобы исполнить вашу идею в более интересной и интуитивной форме.
-=======
-You can write custom Vue components and use them directly inside your markdown file. You can also interact with them inside the presentation to express your idea in a more interesting and intuitive way.
->>>>>>> 010799691b5c572dba187a5a8bdae3ba6abb319d
 
 ## Поддержка записи
 

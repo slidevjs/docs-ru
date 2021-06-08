@@ -23,13 +23,8 @@ $ npm init slidev-theme
 
 Темы публикуются в реестре npm, и они должны соответствовать приведённым ниже соглашениям:
 
-<<<<<<< HEAD
 - Имя пакета должно начинаться с `slidev-theme-`, например: `slidev-theme-awesome`
 - Содержать `slidev-theme` и `slidev` в поле `keywords` вашего `package.json`
-=======
-- Package name should start with `slidev-theme-`, for example: `slidev-theme-awesome`
-- Add `slidev-theme` and `slidev` in the `keywords` field of your `package.json`
->>>>>>> 010799691b5c572dba187a5a8bdae3ba6abb319d
 
 ## Настройка
 
