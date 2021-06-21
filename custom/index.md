@@ -12,6 +12,8 @@ Slidev полностью кастомизируем, начиная от сти
 theme: 'default'
 # заголовок слайда, если не указан, то будет автоматически подставлен из первого найденного заголовка
 title: ''
+# titleTemplate for the webpage, `%s` will be replaced by the page's title
+titleTemplate: '%s - Slidev'
 
 # загрузка pdf в SPA сборке, также может содержать кастомный URL
 download: true
