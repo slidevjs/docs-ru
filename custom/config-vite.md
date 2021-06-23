@@ -43,4 +43,8 @@ export default defineConfig({
 })
 ```
 
+<<<<<<< HEAD
 См. дополнительные параметры в [объявлении типов](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50).
+=======
+See the [type declarations](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) for more options.
+>>>>>>> 661373b820986b8c869419aa33284cc0c0cfb3b1
