@@ -62,7 +62,7 @@ $ yarn create slidev
 {
   "scripts": {
     "dev": "slidev", // запуск dev севера
-    "build": "slidev build", // билд SPA для продакшна
+    "build": "slidev build", // билд SPA для production
     "export": "slidev export" // экспорт слайдов в pdf
   }
 }
