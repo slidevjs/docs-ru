@@ -150,33 +150,29 @@ blockquote {
 </style>
 ```
 
-<<<<<<< HEAD
-## Заметки
-=======
-## Static Assets
+## Статические ресурсы
 
-Just like you would do in markdown, you can use images pointing to a remote or local url.
+Как и в случае с markdown, вы можете вставлять изображения, использующие удаленный или локальный URL.
 
-For remote assets, the built-in [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) will cache them into the disk at the first run so you can have instant loading even for large images later on.
+Для удаленных ресурсов встроенный [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) кэширует их на диск при первом запуске, поэтому позже у вас будет мгновенная загрузку даже для больших изображений.
 
 ```md
 ![Remote Image](https://sli.dev/favicon.png)
 ```
 
-For local assets, put them into the [`public` folder](/custom/directory-structure.html#public) and reference them with **leading slash**.
+Для локальных ресурсов поместите их в [папку `public`](/custom/directory-structure.html#public) и укажите их через **ведущий слэш**.
 
 ```md
 ![Local Image](/pic.png)
 ```
 
-For you want to apply custom sizes or styles, you can convert them to the `<img>` tag 
+Если вы хотите применить кастомные размеры или стили, вы можете вставить их через `<img>` тег 
 
 ```html
 <img src="/pic.png" class="m-40 h-40 rounded shadow" />
 ```
 
-## Notes
->>>>>>> 83d754553616372f9655366cd91e125b8d17f855
+## Заметки
 
 Вы также можете делать заметки для каждого слайда. Они будут отображаться в [Режиме презентации](/guide/presenter-mode), чтобы вы могли ссылаться на них во время презентаций.
 
