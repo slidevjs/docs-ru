@@ -23,7 +23,11 @@ $ slidev export
 
 > Доступно с версии v0.21
 
+<<<<<<< HEAD
 По умолчанию Slidev экспортирует 1 страницу на слайд с отключенной анимацией кликов. Если вы хотите экспортировать слайды с несколькими шагами для вставки нескольких страниц, передайте параметры `--with-clicks`.
+=======
+By default, Slidev exports one page per slide with clicks animations disabled. If you want export slides with multiple steps into multiple pages, pass the `--with-clicks` options.
+>>>>>>> 43ba9b5124834bb0357272c915cf70fa0cc52e06
 
 ```bash
 $ slidev export --with-clicks
@@ -59,7 +63,11 @@ $ slidev build --base /talks/my-cool-talk/
 
 ### Provide Downloadable PDF
 
+<<<<<<< HEAD
 Вы можете предоставить PDF-файл для скачивания вашим пользователям SPA. Включить его можно с помощью следующей конфигурации:
+=======
+You can provide a downloadable PDF to the viewers of your SPA with the following config:
+>>>>>>> 43ba9b5124834bb0357272c915cf70fa0cc52e06
 
 ```md
 ---
@@ -67,7 +75,11 @@ download: true
 ---
 ```
 
+<<<<<<< HEAD
 Теперь Slidev сгенерирует PDF-файл вместе со сборкой, и в SPA появится кнопка загрузки.
+=======
+Slidev will generate a pdf file along with the build and a download button will be displayed in the SPA.
+>>>>>>> 43ba9b5124834bb0357272c915cf70fa0cc52e06
 
 Вы также можете указать собственный URL-адрес для PDF-файла. В этом случае процесс рендеринга будет пропущен.
 

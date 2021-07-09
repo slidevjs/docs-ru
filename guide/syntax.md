@@ -32,7 +32,11 @@ console.log('Привет, мир!')
 
 ## Front Matter и Шаблоны
 
+<<<<<<< HEAD
 Вы можете указать макеты и другие метаданные для каждого слайда, преобразовав разделители в [front matter блоки](https://jekyllrb.com/docs/front-matter/). Каждый front matter блок начинается с тройного тире и заканчивается ими же. Тексты между ними представляют собой объекты данных в [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) формате. Например:
+=======
+Specify layouts and other metadata for each slide by converting the separators into [front matter blocks](https://jekyllrb.com/docs/front-matter/). Each frontmatter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
+>>>>>>> 43ba9b5124834bb0357272c915cf70fa0cc52e06
 
 ~~~md
 ---
@@ -72,7 +76,13 @@ console.log('Привет, мир!')
 //```
 ~~~
 
+<<<<<<< HEAD
 ### Подсветка строк
+=======
+We support [Prism](http://prismjs.com) and [Shiki](https://github.com/shiki/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+
+### Line Highlighting
+>>>>>>> 43ba9b5124834bb0357272c915cf70fa0cc52e06
 
 Чтобы выделить определённые строки, просто добавьте номера строк в скобки `{}`. Нумерация строк начинается с 1.
 
@@ -216,7 +226,11 @@ Slidev позволяет вам получить доступ практиче�
 - `<logos-vue />` - <logos-vue /> из [SVG Logos](https://github.com/gilbarbara/logos)
 - И многое другое...
 
+<<<<<<< HEAD
 Вы можете посмотреть и найти все значки, доступные в [Icônes](https://icones.js.org/).
+=======
+Browse and search for all the icons available with [Icônes](https://icones.js.org/).
+>>>>>>> 43ba9b5124834bb0357272c915cf70fa0cc52e06
 
 ### Стилизация иконок
 
@@ -258,7 +272,7 @@ layout: two-cols
 
 Это отобразится справа
 
-<template>
+</template>
 ```
 
 <div class="grid grid-cols-2 rounded border border-gray-400 border-opacity-50 px-10 pb-4">
@@ -290,7 +304,11 @@ layout: two-cols
 Это отобразится справа
 ```
 
+<<<<<<< HEAD
 Вы также можете явно указать слот по умолчанию и в произвольном порядке
+=======
+You can also explicitly specify the default slot and provide in the custom order
+>>>>>>> 43ba9b5124834bb0357272c915cf70fa0cc52e06
 
 ```md
 ---
