@@ -28,10 +28,6 @@
 
 ## Обзор слайдов
 
-<<<<<<< HEAD
 Нажав на <kbd>o</kbd> или кликнув на кнопку <carbon-apps class="inline-icon-btn" /> в панели навигации, вы можете просмотреть свои слайды и без труда переключиться на них
-=======
-By pressing <kbd>o</kbd> or clicking the <carbon-apps class="inline-icon-btn"/> button in the navigation bar, you can have the overview of your slides so you can jump between them easily. 
->>>>>>> 43ba9b5124834bb0357272c915cf70fa0cc52e06
 
 ![](/screenshots/slides-overview.png)
