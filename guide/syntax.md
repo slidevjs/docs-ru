@@ -32,7 +32,7 @@ console.log('Привет, мир!')
 
 ## Front Matter и Шаблоны
 
-Укажите макеты и другие метаданные для каждого слайда, преобразовав разделители в [front matter блоки](https://jekyllrb.com/docs/front-matter/). Каждый front matter блок начинается с тройного тире и заканчивается ими же. Тексты между ними представляют собой объекты данных в формате [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Например:
+Укажите макеты и другие метаданные для каждого слайда, преобразовав разделители в [front matter блоки](https://jekyllrb.com/docs/front-matter/). Каждый frontmatter блок начинается с тройного тире и заканчивается ими же. Тексты между ними представляют собой объекты данных в формате [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Например:
 
 ~~~md
 ---
