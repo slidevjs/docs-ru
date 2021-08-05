@@ -19,6 +19,8 @@ titleTemplate: '%s - Slidev'
 download: true
 # подсветка синтаксиса, может быть 'prism' или 'shiki'
 highlighter: 'prism'
+# отображение номеров строк в блоках кода
+lineNumbers: false
 # включение Monaco редактора, по умолчанию только в дев режиме
 monaco: 'dev'
 
