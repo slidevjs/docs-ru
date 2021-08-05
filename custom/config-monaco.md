@@ -65,14 +65,11 @@ const counter = ref(0)
 //```
 ~~~
 
-<<<<<<< HEAD
 В приведённом выше примере убедитесь, что `vue` и `@vueuse/core` установлены локально как dependencies / devDependencies, Slidev сделает все остальное, чтобы типы для редактора работали автоматически!
-=======
-In the example above, make sure `vue` and `@vueuse/core` are installed locally as dependencies / devDependencies, Slidev will handle the rest to get the types working for the editor automatically!
 
-## Configure Themes
+## Конфигурация тем
 
-The theme is controlled by Slidev based on the light/dark theme. If you want to customize it, you can pass the theme id to the setup function:
+Тема контролируется Slidev на основе светлой/темной темы. Если вы хотите настроить ее, вы можете передать идентификатор темы в функцию настройки:
 
 ```ts
 // ./setup/monaco.ts
@@ -88,12 +85,12 @@ export default defineMonacoSetup(() => {
 })
 ```
 
-If you want to load custom themes:
+Если вы хотите загрузить собственные темы:
 
 ```ts
 import { defineMonacoSetup } from '@slidev/types'
 
-// change to your themes
+// измените на свои темы
 import dark from 'theme-vitesse/themes/vitesse-dark.json'
 import light from 'theme-vitesse/themes/vitesse-light.json'
 
@@ -110,5 +107,4 @@ export default defineMonacoSetup((monaco) => {
 })
 ```
 
-> If you are creating a theme for Slidev, use dynamic `import()` inside the setup function to get better tree-shaking and code-splitting results.
->>>>>>> d9b5a2ed4eea5c454b14f823f740a050ef45f079
+> Если вы создаете тему для Slidev, используйте динамический `import()` внутри функции настройки, чтобы получить лучшие результаты при tree-shaking и code-splitting.

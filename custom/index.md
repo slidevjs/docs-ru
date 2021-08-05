@@ -19,13 +19,9 @@ titleTemplate: '%s - Slidev'
 download: true
 # подсветка синтаксиса, может быть 'prism' или 'shiki'
 highlighter: 'prism'
-<<<<<<< HEAD
-# включение Monaco редактора, по умолчанию только в дев режиме
-=======
-# show line numbers in code blocks
+# отображение номера строк в блоках кода
 lineNumbers: false
-# enable monaco editor, default to dev only
->>>>>>> d9b5a2ed4eea5c454b14f823f740a050ef45f079
+# включение Monaco редактора, по умолчанию только в дев режиме
 monaco: 'dev'
 
 # цветовая схема для слайдов, может быть 'auto', 'light', или 'dark'
@@ -56,11 +52,7 @@ info: |
 ---
 ```
 
-<<<<<<< HEAD
 Подробнее в [определении типов](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29).
-=======
-Check out the [type definitions](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) for more options.
->>>>>>> d9b5a2ed4eea5c454b14f823f740a050ef45f079
 
 ## Структура каталогов
 

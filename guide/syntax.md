@@ -369,11 +369,7 @@ $$
 
 Вы также можете создавать диаграммы / графики из текстовых описаний в вашем Markdown, используя [Mermaid](https://mermaid-js.github.io/mermaid).
 
-<<<<<<< HEAD
 Блоки кода, помеченные как `mermaid`, будут преобразованы в диаграммы, например:
-=======
-Code blocks marked as `mermaid` will be converted to diagrams, for example:
->>>>>>> d9b5a2ed4eea5c454b14f823f740a050ef45f079
 
 ~~~md
 //```mermaid
