@@ -1,4 +1,4 @@
-# Learning Resources
+# Образовательные ресурсы
 
 ## English
 

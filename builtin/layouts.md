@@ -2,112 +2,109 @@
 
 ## Встроенные шаблоны
 
-<<<<<<< HEAD
-> Документация в процессе разработки. А пока, вы можете взглянуть напрямую [в исходный код](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts).
-=======
-> As themes may override layouts behaviour, the best way to know exactly the usage, parameters and examples is referring their documentation.
+> Поскольку темы могут переопределять поведение макетов, лучший способ узнать точное использование, параметры и примеры - обратиться к их документации.
 
 
 ### `center`
 
-Displays the content in the middle of the sreen.
+Отображает содержимое в центре экрана.
 
 ### `cover`
 
-Used to display the cover page for the presentation, may contain the presentation title, contextualization, etc.
+Используется для отображения титульной страницы презентации, может содержать название презентации, контекстуализацию и т.д.
 
 ### `default`
 
-The most baisc layout, to display any kind of content.
+Самый простой макет для отображения любого вида контента.
 
 ### `end`
 
-The final page for the presentation.
+Заключительная страница для презентации.
 
 ### `fact`
 
-To show some fact or data with a lot of prominence on the screen.
+Показать на экране какой-либо факт или данные с большим акцентом.
 
 ### `full`
 
-Use all the space of the screen to display the content.
+Использует все пространство экрана для отображения содержимого.
 
 ### `image-left`
 
-Shows an image on the left side of the screen, the content will be placed on the right side.
+Показывает изображение в левой части экрана, содержимое будет размещено в правой части.
 
-#### Usage
+#### Использование
 
 ```yaml
 ---
 layout: image-left
 
-# the image source
+# источник изображения
 image: ./path/to/the/image
 
-# a custom class name to the content
+# пользовательское имя класса для содержимого
 class: my-cool-content-on-the-right
 ---
 ```
 
 ### `image-right`
 
-Shows an image on the right side of the screen, the content will be placed on the left side.
+Показывает изображение в правой части экрана, содержимое будет размещено в левой части.
 
-#### Usage
+#### Использование
 
 ```yaml
 ---
 layout: image-right
 
-# the image source
+# источник изображения
 image: ./path/to/the/image
 
-# a custom class name to the content
+# пользовательское имя класса для содержимого
 class: my-cool-content-on-the-left
 ---
 ```
 
 ### `image`
 
-Shows an image as the main content of the page.
+Показывает изображение в качестве основного содержимого страницы.
 
-#### Usage
+#### Использование
 
 ```yaml
 ---
 layout: image
 
-# the image source
+# источник изображения
 image: ./path/to/the/image
 ---
 ```
 
 ### `intro`
 
-To introduce the presentation, usually with the presentation title, a short description, the author, etc.
+Представление презентации, обычно с указанием названия презентации, краткого описания, автора и т.д.
 
 ### `none`
 
-A layout without any existent styling.
+Макет без какой-либо существующей стилизации.
 
 ### `quote`
 
-To display a quotation with prominience.
+Отображает цитату на видном месте.
 
 ### `section`
 
-Used to mark the beginning of a new presentation section.
+Используется для обозначения начала нового раздела презентации.
 
 ### `statement`
 
-Make an affirmation/statement as the main page content.
+Делает утверждение/заявление основным содержанием страницы.
 
 ### `two-cols`
 
-Separates the page content in two columns.
+Разделяет содержимое страницы на две колонки.
 
-#### Usage
+#### Использование
 
 
 ```md
@@ -115,17 +112,16 @@ Separates the page content in two columns.
 layout: two-cols
 ---
 
-# Left
+# Слева
 
-This shows on the left
+Это отобразится слева
 
 ::right::
 
-# Right
+# Справа
 
-This shows on the right
+Это отобразится справа
 ```
->>>>>>> 3d7250800ddac904f7a1b1b24f2830f892a27a03
 
 ## Кастомные шаблоны
 
