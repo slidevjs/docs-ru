@@ -161,6 +161,10 @@ const Resources = [
     link: '/showcases',
   },
   {
+    text: 'Образовательные ресурсы',
+    link: '/resources/learning',
+  },
+  {
     text: 'Модерируемые обложки',
     link: '/resources/covers',
   },
