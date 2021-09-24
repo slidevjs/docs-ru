@@ -39,6 +39,7 @@ $ slidev export --format png
 
 ## Single-Page Application (SPA)
 
+<<<<<<< HEAD
 Вы также можете сбилдить слайды в self-hostable SPA:
 
 ```bash
@@ -83,3 +84,6 @@ download: 'https://myside.com/my-talk.pdf'
 
 - [Starter Template](https://sli.dev/demo/starter)
 - [Composable Vue](https://talks.antfu.me/2021/composable-vue) от [Anthony Fu](https://github.com/antfu)
+=======
+See [Static Hosting](/guide/hosting).
+>>>>>>> d0e3a01b753625e63d3c1611ce90c8118ce93553
