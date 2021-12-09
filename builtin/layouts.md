@@ -15,7 +15,11 @@
 
 ### `default`
 
+<<<<<<< HEAD
 Самый простой макет для отображения любого вида контента.
+=======
+The most basic layout, to display any kind of content.
+>>>>>>> fbc97d802e30cc663321c93b32fff3cee9ca7ff9
 
 ### `end`
 
