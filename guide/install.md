@@ -39,7 +39,7 @@ $ npx slidev
 > Обратите внимание, если вы используете [pnpm](https://pnpm.io), вам нужно включить [shamefully-hoist](https://pnpm.io/npmrc#shamefully-hoist) опцию для корректной работы Slidev:
 >
 > ```bash
-> echo 'shamefully-flatten=true' >> .npmrc
+> echo 'shamefully-hoist=true' >> .npmrc
 > ```
 
 ## Глобальная установка
