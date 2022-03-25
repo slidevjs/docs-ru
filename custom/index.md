@@ -33,8 +33,15 @@ aspectRatio: '16/9'
 # реальная ширина canvas, единица измерения в пикселях
 canvasWidth: 980
 
+<<<<<<< HEAD
 # шрифты будут автоматически импортированы из Google fonts
 # Подробнее: https://sli.dev/custom/fonts
+=======
+# favicon, can be a local file path or URL
+favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
+# fonts will be auto imported from Google fonts
+# Learn more: https://sli.dev/custom/fonts
+>>>>>>> d68398ac58d3e8efc2f6d29119938f4a4382f617
 fonts:
   sans: 'Roboto'
   serif: 'Roboto Slab'
