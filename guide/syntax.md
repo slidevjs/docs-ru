@@ -72,7 +72,11 @@ console.log('Привет, мир!')
 //```
 ~~~
 
+<<<<<<< HEAD
 ### Подсветка строк
+=======
+We support [Prism](http://prismjs.com) and [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> 0daa359721a2cdbb0abac8fc5f5e1c00dd7b4452
 
 Мы поддерживаем [Prism](http://prismjs.com) и [Shiki](https://github.com/shiki/shiki) в качестве подсветки синтаксиса. Обратитесь к [разделу подсветки](/custom/highlighters) для получения более подробной информации.
 
