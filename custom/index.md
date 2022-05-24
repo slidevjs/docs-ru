@@ -8,33 +8,80 @@ Slidev полностью кастомизируем, начиная от сти
 
 ```yaml
 ---
+<<<<<<< HEAD
 # id темы или название пакета
 theme: 'default'
 # заголовок слайда, если не указан, то будет автоматически подставлен из первого найденного заголовка
 title: ''
 # шаблон заголовка для веб-страницы, `%s` будет заменен заголовком страницы
+=======
+# theme id or package name
+# Learn more: https://sli.dev/themes/use.html
+theme: 'default'
+# title of your slide, will auto infer from the first header if not specified
+title: 'Slidev'
+# titleTemplate for the webpage, `%s` will be replaced by the page's title
+>>>>>>> afa4515b72ea8814d0a633bdb4ec4c41734b502c
 titleTemplate: '%s - Slidev'
+# information for your slides, can be a markdown string
+info: false
 
+<<<<<<< HEAD
 # загрузка pdf в SPA сборке, также может содержать кастомный URL
 download: true
 # подсветка синтаксиса, может быть 'prism' или 'shiki'
+=======
+# enabled pdf downloading in SPA build, can also be a custom url
+download: false
+# filename of the export file
+exportFilename: 'slidev-exported.pdf'
+# syntax highlighter, can be 'prism' or 'shiki'
+>>>>>>> afa4515b72ea8814d0a633bdb4ec4c41734b502c
 highlighter: 'prism'
 # отображение номеров строк в блоках кода
 lineNumbers: false
+<<<<<<< HEAD
 # включение Monaco редактора, по умолчанию только в дев режиме
+=======
+# enable monaco editor, can be boolean, 'dev' or 'build'
+>>>>>>> afa4515b72ea8814d0a633bdb4ec4c41734b502c
 monaco: 'dev'
+# download remote assets in local using vite-plugin-remote-assets, can be boolean, 'dev' or 'build'
+remoteAssets: false
+# controls whether texts in slides are selectable
+selectable: true
+# enable slide recording, can be boolean, 'dev' or 'build'
+record: 'dev'
 
+<<<<<<< HEAD
 # цветовая схема для слайдов, может быть 'auto', 'light', или 'dark'
 colorSchema: 'auto'
 # режим роутера для vue-router, может быть 'history' или 'hash'
+=======
+# force color schema for the slides, can be 'auto', 'light', or 'dark'
+colorSchema: 'auto'
+# router mode for vue-router, can be "history" or "hash"
+>>>>>>> afa4515b72ea8814d0a633bdb4ec4c41734b502c
 routerMode: 'history'
 # соотношение сторон слайдов
 aspectRatio: '16/9'
 # реальная ширина canvas, единица измерения в пикселях
 canvasWidth: 980
+# used for theme customization, will inject root styles as `--slidev-theme-x` for attribute `x`
+themeConfig:
+  primary: '#5d8392'
 
+<<<<<<< HEAD
 # шрифты будут автоматически импортированы из Google fonts
 # Подробнее: https://sli.dev/custom/fonts
+=======
+# favicon, can be a local file path or URL
+favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
+# URL of PlantUML server used to render diagrams
+plantUmlServer: 'https://www.plantuml.com/plantuml'
+# fonts will be auto imported from Google fonts
+# Learn more: https://sli.dev/custom/fonts
+>>>>>>> afa4515b72ea8814d0a633bdb4ec4c41734b502c
 fonts:
   sans: 'Roboto'
   serif: 'Roboto Slab'
@@ -45,10 +92,20 @@ defaults:
   layout: 'default'
   # ...
 
+<<<<<<< HEAD
 # информация для слайдов, может быть markdown-строкой
 info: |
   ## Slidev
   My first [Slidev](http://sli.dev/) presentations!
+=======
+# drawing options
+# Learn more: https://sli.dev/guide/drawing.html
+drawings:
+  enabled: true
+  persist: false
+  presenterOnly: false
+  syncAll: true
+>>>>>>> afa4515b72ea8814d0a633bdb4ec4c41734b502c
 ---
 ```
 
