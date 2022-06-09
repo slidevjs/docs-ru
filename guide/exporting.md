@@ -17,7 +17,17 @@ $ npm i -D playwright-chromium
 $ slidev export
 ```
 
+<<<<<<< HEAD
 Через несколько секунд ваши слайды будут находиться в `./slides-exports.pdf`.
+=======
+After a few seconds, your slides will be ready at `./slides-export.pdf`.
+
+In case you want to export your slides using the dark version of the theme, use the `--dark` option:
+
+```bash
+$ slidev export --dark
+```
+>>>>>>> 2f3c88e83091a9ba81a79b5e07b67fab660957db
 
 ### Экспорт с кликами
 
