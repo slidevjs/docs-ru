@@ -72,7 +72,11 @@ console.log('Привет, мир!')
 //```
 ~~~
 
+<<<<<<< HEAD
 ### Подсветка строк
+=======
+We support [Prism](http://prismjs.com) and [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> 2f3c88e83091a9ba81a79b5e07b67fab660957db
 
 Мы поддерживаем [Prism](http://prismjs.com) и [Shiki](https://github.com/shiki/shiki) в качестве подсветки синтаксиса. Обратитесь к [разделу подсветки](/custom/highlighters) для получения более подробной информации.
 
@@ -102,7 +106,24 @@ function add(
 //```
 ~~~
 
+<<<<<<< HEAD
 Сначала будет выделено `a: Ref<number> | number` и `b: Ref<number> | number`, а затем `return computed(() => unref(a) + unref(b))` после одного клика, и наконец, весь блок. Подробнее в [руководстве анимации по кликам](/guide/animations).
+=======
+To skip highlighting any lines, you can set the line number to `0`. For example
+
+~~~ts {0}
+//```ts {0}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+This will first highlight `a: Ref<number> | number` and `b: Ref<number> | number`, and then `return computed(() => unref(a) + unref(b))` after one click, and lastly, the whole block. Learn more in the [clicks animations guide](/guide/animations).
+>>>>>>> 2f3c88e83091a9ba81a79b5e07b67fab660957db
 
 ### Monaco редактор
 
