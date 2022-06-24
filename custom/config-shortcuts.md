@@ -29,4 +29,24 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 
 Функция получает объект с некоторыми методами навигации и возвращает массив, содержащий некоторую конфигурацию горячих клавиш. Посмотрите определения типов для получения более подробной информации.
 
+<<<<<<< HEAD
 Подробнее о событиях нажатия клавиш в [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/).
+=======
+The `key` type only allows for strings, but you can still bind multiple keys by using following convention:
+
+```ts
+import { defineShortcutsSetup, NavOperations } from '@slidev/types'
+
+export default defineShortcutsSetup((nav: NavOperations) => {
+  return [
+    {
+      key: 'ShiftLeft+ArrowRight',
+      fn: () => nav.next(),
+      autoRepeat: true,
+    }
+  ]
+})
+```
+
+Refer to [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) for more details about key pressed event.
+>>>>>>> c8121c161efd5a726d336648d2b101540c346dd2
