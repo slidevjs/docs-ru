@@ -47,9 +47,13 @@ const Guide = [
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     text: 'Интеграции редакторов',
 =======
     text: 'Drawing & Annonations',
+=======
+    text: 'Drawing & Annotations',
+>>>>>>> ea87df4ac396a62567b3083d52e9bee2768b32bd
     link: '/guide/drawing',
   },
   {
@@ -75,6 +79,17 @@ const Theme = [
   {
     text: 'Создание темы',
     link: '/themes/write-a-theme',
+  },
+]
+
+const Addon = [
+  {
+    text: 'Use Addon',
+    link: '/addons/use',
+  },
+  {
+    text: 'Write an Addon',
+    link: '/addons/write-an-addon',
   },
 ]
 
@@ -113,6 +128,10 @@ const Translations = [
   {
     text: 'Ελληνικά',
     link: 'https://el.sli.dev{{pathname}}',
+  },
+  {
+    text: '日本語',
+    link: 'https://ja.sli.dev{{pathname}}',
   },
 ]
 
@@ -196,7 +215,15 @@ const slidebars = [
     children: Theme,
   },
   {
+<<<<<<< HEAD
     text: 'Кастомизация',
+=======
+    text: 'Addons',
+    children: Addon,
+  },
+  {
+    text: 'Customizations',
+>>>>>>> ea87df4ac396a62567b3083d52e9bee2768b32bd
     children: Customizations,
   },
   {
@@ -259,7 +286,15 @@ module.exports = {
         items: Theme,
       },
       {
+<<<<<<< HEAD
         text: 'Кастомизация',
+=======
+        text: 'Addon',
+        items: Addon,
+      },
+      {
+        text: 'Customize',
+>>>>>>> ea87df4ac396a62567b3083d52e9bee2768b32bd
         items: Customizations,
       },
       {
@@ -275,6 +310,7 @@ module.exports = {
     sidebar: {
       '/guide/': slidebars,
       '/themes/': slidebars,
+      '/addons/': slidebars,
       '/custom/': slidebars,
       '/builtin/': slidebars,
       '/resources/': slidebars,
