@@ -72,7 +72,11 @@ console.log('Привет, мир!')
 //```
 ~~~
 
+<<<<<<< HEAD
 ### Подсветка строк
+=======
+We support [Prism](https://prismjs.com) and [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> ea87df4ac396a62567b3083d52e9bee2768b32bd
 
 Мы поддерживаем [Prism](http://prismjs.com) и [Shiki](https://github.com/shiki/shiki) в качестве подсветки синтаксиса. Обратитесь к [разделу подсветки](/custom/highlighters) для получения более подробной информации.
 
@@ -104,7 +108,40 @@ function add(
 
 Сначала будет выделено `a: Ref<number> | number` и `b: Ref<number> | number`, а затем `return computed(() => unref(a) + unref(b))` после одного клика, и наконец, весь блок. Подробнее в [руководстве анимации по кликам](/guide/animations).
 
+<<<<<<< HEAD
 ### Monaco редактор
+=======
+To skip highlighting any lines, you can set the line number to `0`. For example
+
+~~~ts {0}
+//```ts {0}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+If the code doesn't fit into one slide, you can pass an extra maxHeight option which will set fixed height
+and enable scrolling
+
+~~~ts {2|3|7|12}
+//```ts {2|3|7|12} {maxHeight:'100'}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+/// ...as many lines as you want
+const c = add(1, 2)
+//```
+~~~
+
+### Monaco Editor
+>>>>>>> ea87df4ac396a62567b3083d52e9bee2768b32bd
 
 Всякий раз, когда вы хотите внести какие-либо изменения в презентацию, просто добавьте `{monaco}` после указания языка подсветки - это превратит блок в полнофункциональный Monaco редактор!
 
@@ -207,7 +244,11 @@ layout: cover
 
 ## Иконки
 
+<<<<<<< HEAD
 Slidev позволяет вам получить доступ практически ко всем популярным наборам иконок с открытым исходным кодом **прямо** в вашем markdown. Работает это через [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) и [Iconify](https://iconify.design/).
+=======
+Slidev allows you to have the accessing to almost all the popular open-source iconsets **directly** in your markdown. Powered by [`unplugin-icons`](https://github.com/antfu/unplugin-icons) and [Iconify](https://iconify.design/).
+>>>>>>> ea87df4ac396a62567b3083d52e9bee2768b32bd
 
 Именование следует [Iconify](https://iconify.design/) преобразованию `{collection-name}-{icon-name}`. Например:
 
