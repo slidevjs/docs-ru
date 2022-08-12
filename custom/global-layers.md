@@ -4,13 +4,25 @@
 
 Глобальные слои позволяют иметь кастомные компоненты, **постоянно** доступные в слайдах. Это может быть полезно для футера, анимации смены слайдов, глобальных эффектов и т.д.
 
+<<<<<<< HEAD
 Slidev предоставляет два слоя для этого: создайте `global-top.vue` или `global-bottom.vue` в корне вашего проекта, и он будет загружен автоматически.
+=======
+Slidev provides three layers for this usage, create `global-top.vue`, `global-bottom.vue` or `custom-nav-controls.vue` under your project root and it will pick up automatically.
+>>>>>>> e9156da7e3b01f48ac2a90552936da50c797d88d
 
 Связь слоёв:
 
+<<<<<<< HEAD
 - Глобальный Top (`global-top.vue`)
 - Слайды
 - Глобальный Bottom (`global-bottom.vue`)
+=======
+- Global Top (`global-top.vue`)
+- Slides
+- Global Bottom (`global-bottom.vue`)
+- NavControls
+  - Customized Navigation Controls (`custom-nav-controls.vue`)
+>>>>>>> e9156da7e3b01f48ac2a90552936da50c797d88d
 
 ## Примеры
 
@@ -23,7 +35,22 @@ Slidev предоставляет два слоя для этого: созда�
 
 Текст `Ваше имя` будет отображаться на всех ваших слайдах.
 
+<<<<<<< HEAD
 Чтобы использовать при определённых условиях, вы можете применить его с помощью [глобального контекста Vue](/custom/vue-context).
+=======
+```html
+<!-- custom-nav-controls -->
+<template>
+  <button class="icon-btn" title="Next" @click="$slidev.nav.next">
+    <carbon:arrow-right />
+  </button>
+</template>
+```
+
+The button `Next` will appear in NavControls.
+
+To enable it conditionally, you can apply it with the [Vue Global Context](/custom/vue-context).
+>>>>>>> e9156da7e3b01f48ac2a90552936da50c797d88d
 
 ```html
 <!-- футер будет скрыт на четвёртой странице -->
@@ -58,5 +85,15 @@ Slidev предоставляет два слоя для этого: созда�
   >
     {{ $slidev.nav.currentPage }} / {{ $slidev.nav.total }}
   </footer>
+</template>
+```
+
+```html
+<!-- custom-nav-controls -->
+<!-- hide the button in Presenter model -->
+<template>
+  <button v-if="!$slidev.nav.isPresenter" class="icon-btn" title="Next" @click="$slidev.nav.next">
+    <carbon:arrow-right />
+  </button>
 </template>
 ```
