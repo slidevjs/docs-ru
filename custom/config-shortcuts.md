@@ -2,15 +2,19 @@
 
 > Доступно с версии v0.20
 
+> Since v0.35.6 (excluded), you decide which base shortcuts to keep (see `...base,` below).
+
 <Environment type="client" />
 
 Создайте `./setup/shortcuts.ts` со следующим содержанием:
 
 ```ts
-import { defineShortcutsSetup, NavOperations } from '@slidev/types'
+import type { NavOperations, ShortcutOptions } from '@slidev/types'
+import { defineShortcutsSetup } from '@slidev/types'
 
-export default defineShortcutsSetup((nav: NavOperations) => {
+export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]) => {
   return [
+    ...base, // keep the existing shortcuts
     {
       key: 'enter',
       fn: () => nav.next(),
@@ -29,4 +33,26 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 
 Функция получает объект с некоторыми методами навигации и возвращает массив, содержащий некоторую конфигурацию горячих клавиш. Посмотрите определения типов для получения более подробной информации.
 
+<<<<<<< HEAD
 Подробнее о событиях нажатия клавиш в [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/).
+=======
+The `key` type only allows for strings, but you can still bind multiple keys by using following convention:
+
+```ts
+import type { NavOperations, ShortcutOptions } from '@slidev/types'
+import { defineShortcutsSetup } from '@slidev/types'
+
+export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]) => {
+  return [
+    ...base,
+    {
+      key: 'ShiftLeft+ArrowRight',
+      fn: () => nav.next(),
+      autoRepeat: true,
+    }
+  ]
+})
+```
+
+Refer to [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) for more details about key pressed event.
+>>>>>>> ecd8bf022f3594c9efceac78aae2852a0055f9bf
