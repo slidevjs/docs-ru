@@ -120,7 +120,11 @@ Slidev переключает класс `dark` в элементе `html` ст�
 
 В теме также предусмотрены цвета для подсветки синтаксиса. Мы поддерживаем как [Prism](https://prismjs.com/), так и [Shiki](https://github.com/shikijs/shiki). Подробнее в [документации по подсветке синтаксиса](/custom/highlighters).
 
+<<<<<<< HEAD
 Вы можете использовать как один из них, так и оба. Примеры конфигураций дефолтной темы смотрите в [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/styles/prism.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
+=======
+You can support either one of them, or both. Refer to the default theme for configurations examples [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts).
+>>>>>>> 041453dfdd1dbc3f02b3114416e1b20b60563679
 
 Также не забудьте указать поддерживаемую подсветку в вашем `package.json`
 
