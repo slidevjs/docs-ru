@@ -1,6 +1,8 @@
 # Экспорт
 
-## PDF
+## Slides
+
+### PDF
 
 > Экспорт в PDF или PNG происходит за счёт [Playwright](https://playwright.dev) рендеринга. Поэтому вам необходимо установить [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary), чтобы использовать этот функционал.
 > Если вы выполняете экспорт в CI, то взгляните на [руководство по playwright CI](https://playwright.dev/docs/ci).
@@ -17,9 +19,21 @@ $ npm i -D playwright-chromium
 $ slidev export
 ```
 
+<<<<<<< HEAD
 Через несколько секунд ваши слайды будут находиться в `./slides-exports.pdf`.
 
 ### Экспорт с кликами
+=======
+After a few seconds, your slides will be ready at `./slides-export.pdf`.
+
+In case you want to export your slides using the dark version of the theme, use the `--dark` option:
+
+```bash
+$ slidev export --dark
+```
+
+#### Export Clicks Steps
+>>>>>>> 5cffe3bca749ea2af7b370223f0f442d15d88d8e
 
 > Доступно с версии v0.21
 
@@ -29,7 +43,11 @@ $ slidev export
 $ slidev export --with-clicks
 ```
 
+<<<<<<< HEAD
 ## PNG
+=======
+### PNGs
+>>>>>>> 5cffe3bca749ea2af7b370223f0f442d15d88d8e
 
 При передаче параметра `--format png` Slidev будет экспортировать каждый слайд в изображения PNG вместо PDF.
 
@@ -37,7 +55,7 @@ $ slidev export --with-clicks
 $ slidev export --format png
 ```
 
-## Single-Page Application (SPA)
+### Single-Page Application (SPA)
 
 <<<<<<< HEAD
 Вы также можете сбилдить слайды в self-hostable SPA:
@@ -86,4 +104,17 @@ download: 'https://myside.com/my-talk.pdf'
 - [Composable Vue](https://talks.antfu.me/2021/composable-vue) от [Anthony Fu](https://github.com/antfu)
 =======
 See [Static Hosting](/guide/hosting).
+<<<<<<< HEAD
 >>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
+=======
+
+## Presenter notes
+
+> Available since v0.36.8
+
+Export only the presenter notes (the last comment block for each slide) into a text document in PDF.
+
+```bash
+$ slidev export-notes
+```
+>>>>>>> 5cffe3bca749ea2af7b370223f0f442d15d88d8e
