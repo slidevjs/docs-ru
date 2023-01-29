@@ -9,11 +9,19 @@ your-slidev/
   ├── components/       # кастомные компоненты
   ├── layouts/          # кастомные шаблоны
   ├── public/           # static assets
+<<<<<<< HEAD
   ├── setup/            # кастомные настройки / хуки
   ├── styles/           # кастомные стили
   ├── index.html        # инъекции в index.html
   ├── slides.md         # описание слайдов
   └── vite.config.ts    # расширение конфигурации vite
+=======
+  ├── setup/            # custom setup / hooks
+  ├── styles/           # custom style
+  ├── index.html        # injections to index.html
+  ├── slides.md         # the main slides entry
+  └── vite.config.ts    # extending vite config
+>>>>>>> 2e53e8c41664c5aa920ca84e738e95c8a05fb349
 ```
 
 Все они необязательны.
@@ -48,7 +56,11 @@ your-slidev/
 </hello-world>
 ```
 
+<<<<<<< HEAD
 Эта функция работает благодаря [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components).
+=======
+This feature is powered by [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components), learn more there.
+>>>>>>> 2e53e8c41664c5aa920ca84e738e95c8a05fb349
 
 Slidev также предоставляет вам некоторые [встроенные компоненты](/builtin/components).
 
@@ -115,7 +127,11 @@ import './code.css'
 import './layouts.css'
 ```
 
+<<<<<<< HEAD
 Стили будут обрабатываться через [Windi CSS](http://windicss.org/) и [PostCSS](https://postcss.org/), поэтому вы можете использовать вложенные css стили и [at-директивы](https://windicss.org/features/directives.html) прямо из коробки. Например:
+=======
+Styles will be processed by [Windi CSS](https://windicss.org/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://windicss.org/features/directives.html) out-of-box. For example:
+>>>>>>> 2e53e8c41664c5aa920ca84e738e95c8a05fb349
 
 ```less
 .slidev-layout {
