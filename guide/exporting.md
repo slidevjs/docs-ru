@@ -1,6 +1,8 @@
 # Экспорт
 
-## PDF
+## Slides
+
+### PDF
 
 > Экспорт в PDF или PNG происходит за счёт [Playwright](https://playwright.dev) рендеринга. Поэтому вам необходимо установить [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary), чтобы использовать этот функционал.
 > Если вы выполняете экспорт в CI, то взгляните на [руководство по playwright CI](https://playwright.dev/docs/ci).
@@ -17,9 +19,21 @@ $ npm i -D playwright-chromium
 $ slidev export
 ```
 
+<<<<<<< HEAD
 Через несколько секунд ваши слайды будут находиться в `./slides-exports.pdf`.
 
 ### Экспорт с кликами
+=======
+After a few seconds, your slides will be ready at `./slides-export.pdf`.
+
+In case you want to export your slides using the dark version of the theme, use the `--dark` option:
+
+```bash
+$ slidev export --dark
+```
+
+#### Export Clicks Steps
+>>>>>>> dbdc820c8574243d4ae38131ae2a53f6a35a9104
 
 > Доступно с версии v0.21
 
@@ -29,12 +43,38 @@ $ slidev export
 $ slidev export --with-clicks
 ```
 
+<<<<<<< HEAD
 ## PNG
+=======
+### PNGs
+>>>>>>> dbdc820c8574243d4ae38131ae2a53f6a35a9104
 
 При передаче параметра `--format png` Slidev будет экспортировать каждый слайд в изображения PNG вместо PDF.
 
 ```bash
 $ slidev export --format png
+```
+
+### Export a range of slides
+
+By default, all slides in the presentation are exported. If you want to export a specific slide or a range of slides you can set the `--range` option and specify which slides you would like to export. 
+
+```bash
+$ slidev export --range 1,6-8,10
+```
+
+This option accepts both specific slide numbers and ranges.
+
+The example above would export slides 1,6,7,8, and 10. 
+
+## Presenter notes
+
+> Available since v0.36.8
+
+Export only the presenter notes (the last comment block for each slide) into a text document in PDF.
+
+```bash
+$ slidev export-notes
 ```
 
 ## Single-Page Application (SPA)
