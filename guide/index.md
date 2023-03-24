@@ -2,7 +2,11 @@
 
 ## Введение
 
+<<<<<<< HEAD
 Slidev <sup>(slide + dev, произносится `/slʌɪdɪv/`)</sup> – это веб-приложение для создания и презентации слайдов. Предназначен для разработчиков, которые сосредоточены на написании контента в Markdown, в то же время используя HTML и Vue-компоненты для реализации pixel-perfect шаблонов и дизайна со встроенными интерактивными демо в ваши презентации.
+=======
+Slidev <sup>(slide + dev, **/slʌɪdɪv/**)</sup> is a web-based slides maker and presenter. It's designed for developers to focus on writing content in Markdown while also having the power of HTML and Vue components to deliver pixel-perfect layouts and designs with embedded interactive demos in your presentations.
+>>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
 
 Slidev использует многофункциональный markdown-файл для создания красивых слайдов с мгновенной перезагрузкой, а также множество встроенных интеграций, таких как live-кодинг, экспорт PDF, запись презентаций и т.д. Поскольку он работает через интернет, вы можете делать с Slidev всё что угодно — возможности безграничны.
 
@@ -29,7 +33,7 @@ Slidev использует многофункциональный markdown-фа
 - 📝 [**Markdown-based**](/guide/syntax.html) - use your favorite editors and workflow
 - 🧑‍💻 [**Developer Friendly**](/guide/syntax.html#code-blocks) - built-in syntax highlighting, live coding, etc.
 - 🎨 [**Themable**](/themes/gallery.html) - theme can be shared and used with npm packages
-- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) on-demand utilities, easy-to-use embedded stylesheets
+- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - on-demand utilities via [Windi CSS](https://windicss.org/) or [UnoCSS](https://github.com/unocss/unocss).
 - 🤹 [**Interactive**](/custom/directory-structure.html#components) - embedding Vue components seamlessly
 - 🎙 [**Presenter Mode**](/guide/presenter-mode.html) - use another window, or even your phone to control your slides
 - 🎨 [**Drawing**](/guide/drawing.html) - draw and annotate on your slides
@@ -60,7 +64,7 @@ Slidev разработан благодаря набору этих инстр�
 =======
 - [Vite](https://vitejs.dev) - An extremely fast frontend tooling
 - [Vue 3](https://v3.vuejs.org/) powered [Markdown](https://daringfireball.net/projects/markdown/syntax) - Focus on the content while having the power of HTML and Vue components whenever needed
-- [Windi CSS](https://github.com/windicss/windicss) - On-demand utility-first CSS framework, style your slides at ease
+- [Windi CSS](https://github.com/windicss/windicss) or [UnoCSS](https://github.com/unocss/unocss) - On-demand utility-first CSS framework, style your slides at ease
 - [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - First-class code snippets support with live coding capability
 - [RecordRTC](https://recordrtc.org) - Built-in recording and camera view
 - [VueUse](https://vueuse.org) family -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.
@@ -97,7 +101,18 @@ $ npm init slidev
 ```bash
 $ yarn create slidev
 ```
+<<<<<<< HEAD
 Следуйте инструкциям и начните создавать слайды прямо сейчас! Подробнее о markdown-синтаксисе читайте в [руководстве о синтаксисе](/guide/syntax).
+=======
+
+With pnpm:
+
+```bash
+$ pnpm create slidev
+```
+
+Follow the prompts and start making your slides now! For more details about the markdown syntax, read through the [syntax guide](/guide/syntax).
+>>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
 
 ### Command Line Interface
 
