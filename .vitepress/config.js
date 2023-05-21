@@ -47,9 +47,13 @@ const Guide = [
   },
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     text: 'Интеграции редакторов',
 =======
     text: 'Drawing & Annonations',
+=======
+    text: 'Drawing & Annotations',
+>>>>>>> d29625cb3633171f7cf2087a777e68a1cd76ea6f
     link: '/guide/drawing',
   },
   {
@@ -75,6 +79,17 @@ const Theme = [
   {
     text: 'Создание темы',
     link: '/themes/write-a-theme',
+  },
+]
+
+const Addon = [
+  {
+    text: 'Use Addon',
+    link: '/addons/use',
+  },
+  {
+    text: 'Write an Addon',
+    link: '/addons/write-an-addon',
   },
 ]
 
@@ -113,6 +128,10 @@ const Translations = [
   {
     text: 'Ελληνικά',
     link: 'https://el.sli.dev{{pathname}}',
+  },
+  {
+    text: '日本語',
+    link: 'https://ja.sli.dev{{pathname}}',
   },
 ]
 
@@ -158,7 +177,15 @@ const Customizations = [
     link: '/custom/config-mermaid',
   },
   {
+<<<<<<< HEAD
     text: 'Конфигурация горячих клавиш',
+=======
+    text: 'Configure Parser',
+    link: '/custom/config-parser',
+  },
+  {
+    text: 'Configure Shortcuts',
+>>>>>>> d29625cb3633171f7cf2087a777e68a1cd76ea6f
     link: '/custom/config-shortcuts',
   },
   {
@@ -169,6 +196,17 @@ const Customizations = [
     text: 'Глобальные слои',
     link: '/custom/global-layers',
   }
+]
+
+const BuiltIn = [
+  {
+    text: 'Components',
+    link: '/builtin/components',
+  },
+  {
+    text: 'Layouts',
+    link: '/builtin/layouts',
+  },
 ]
 
 const Resources = [
@@ -196,6 +234,7 @@ const slidebars = [
     children: Theme,
   },
   {
+<<<<<<< HEAD
     text: 'Кастомизация',
     children: Customizations,
   },
@@ -211,6 +250,18 @@ const slidebars = [
         link: '/builtin/layouts',
       },
     ],
+=======
+    text: 'Addons',
+    children: Addon,
+  },
+  {
+    text: 'Customizations',
+    children: Customizations,
+  },
+  {
+    text: 'Built-in',
+    children: BuiltIn,
+>>>>>>> d29625cb3633171f7cf2087a777e68a1cd76ea6f
   },
 ]
 
@@ -241,7 +292,8 @@ module.exports = {
     editLinkText: 'Редактировать страницу',
 
     algolia: {
-      apiKey: '1a5c5a504139c58f428974c78c55291d',
+      appId: 'LCBV6MIFS6',
+      apiKey: '1ff173fe73b20edc962c1c24c0b1c160',
       indexName: 'slidev',
       searchParameters: {
         // for translations maintainers: change the filter to your locale code (subdomain name)
@@ -259,11 +311,27 @@ module.exports = {
         items: Theme,
       },
       {
+<<<<<<< HEAD
         text: 'Кастомизация',
         items: Customizations,
       },
       {
         text: 'Ресурсы',
+=======
+        text: 'Addon',
+        items: Addon,
+      },
+      {
+        text: 'Customize',
+        items: Customizations,
+      },
+      {
+        text: 'Built-in',
+        items: BuiltIn,
+      },
+      {
+        text: 'Resources',
+>>>>>>> d29625cb3633171f7cf2087a777e68a1cd76ea6f
         items: Resources,
       },
       {
@@ -275,6 +343,7 @@ module.exports = {
     sidebar: {
       '/guide/': slidebars,
       '/themes/': slidebars,
+      '/addons/': slidebars,
       '/custom/': slidebars,
       '/builtin/': slidebars,
       '/resources/': slidebars,

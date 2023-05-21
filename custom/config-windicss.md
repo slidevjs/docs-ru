@@ -7,7 +7,7 @@ Markdown, естественно, поддерживает встроенные 
 Например:
 
 ```html
-<div class="grid pt-4 gap-4 grids-cols-[100px,1fr]">
+<div class="grid pt-4 gap-4 grid-cols-[100px,1fr]">
 
 ### Имя
 
