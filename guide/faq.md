@@ -24,7 +24,7 @@
 Пойдём дальше, вы можете настроить размер каждого столбца, например:
 
 ```html
-<div class="grid grid-cols-[200px,1fr,10%] gap-4">
+<div class="grid grid-cols-[200px_1fr_10%] gap-4">
 <div>
 
 Первая колонка (200px)
@@ -43,7 +43,11 @@
 </div>
 ```
 
+<<<<<<< HEAD
 Подробнее о [Windi CSS сетках](https://windicss.org/utilities/grid.html).
+=======
+Learn more about [Windi CSS Grids](https://windicss.org/utilities/layout/grid.html).
+>>>>>>> d29625cb3633171f7cf2087a777e68a1cd76ea6f
 
 ## Позиционирование
 
