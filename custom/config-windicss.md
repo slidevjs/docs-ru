@@ -2,12 +2,27 @@
 
 <Environment type="node" />
 
+<<<<<<< HEAD
 Markdown, естественно, поддерживает встроенные разметки HTML. Таким образом, вы можете стилизовать свой контент так, как захотите. Для некоторого удобства у нас есть встроенный [Windi CSS](https://github.com/windicss/windicss), так что вы можете стилизовать разметку напрямую с помощью utility-классов.
+=======
+::: warning
+Since Slidev v0.42.0, [UnoCSS](/custom/config-unocss) become the default CSS framework for Slidev.
+
+You can still use Windi CSS by setting `css: windicss` in the frontmatter.
+```md
+---
+css: windicss
+---
+```
+:::
+
+Markdown naturally supports embedded HTML markups. You can therefore style your content the way you want.
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 Например:
 
 ```html
-<div class="grid pt-4 gap-4 grids-cols-[100px,1fr]">
+<div class="grid pt-4 gap-4 grid-cols-[100px,1fr]">
 
 ### Имя
 
