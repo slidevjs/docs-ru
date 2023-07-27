@@ -7,7 +7,11 @@
 
 ### `center`
 
+<<<<<<< HEAD
 Отображает содержимое в центре экрана.
+=======
+Displays the content in the middle of the screen.
+>>>>>>> cd758d99f59b0813a49eb6fe4bb3f07e1b2b4887
 
 ### `cover`
 
@@ -15,7 +19,11 @@
 
 ### `default`
 
+<<<<<<< HEAD
 Самый простой макет для отображения любого вида контента.
+=======
+The most basic layout, to display any kind of content.
+>>>>>>> cd758d99f59b0813a49eb6fe4bb3f07e1b2b4887
 
 ### `end`
 
