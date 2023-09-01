@@ -7,7 +7,11 @@
 
 ### `center`
 
+<<<<<<< HEAD
 Отображает содержимое в центре экрана.
+=======
+Displays the content in the middle of the screen.
+>>>>>>> 2fe32c406cbcd27bcfe2100a4d8c08d7cc42adc4
 
 ### `cover`
 
@@ -15,7 +19,11 @@
 
 ### `default`
 
+<<<<<<< HEAD
 Самый простой макет для отображения любого вида контента.
+=======
+The most basic layout, to display any kind of content.
+>>>>>>> 2fe32c406cbcd27bcfe2100a4d8c08d7cc42adc4
 
 ### `end`
 
@@ -176,7 +184,38 @@ layout: two-cols
 Это отобразится справа
 ```
 
+<<<<<<< HEAD
 ## Кастомные шаблоны
+=======
+### `tow-cols-header`
+
+Separates the upper and lower lines of the page content, and the second line separates the left and right columns.
+
+#### Usage
+
+
+```md
+---
+layout: two-cols-header
+---
+
+This spans both
+
+::left::
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+```
+
+## Custom Layouts
+>>>>>>> 2fe32c406cbcd27bcfe2100a4d8c08d7cc42adc4
 
 Создайте папку `layouts/` в корне вашего проекта, и просто вставьте в неё ваши кастомные Vue-компоненты.
 
