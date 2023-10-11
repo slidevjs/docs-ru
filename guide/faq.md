@@ -4,7 +4,11 @@
 
 Поскольку Slidev использует в своей работе интернет, вы можете использовать любые макеты сетки по своему усмотрению. [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [flexboxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), или даже [Masonry](https://css-tricks.com/native-css-masonry-layout-in-css-grid/).
 
+<<<<<<< HEAD
 Поскольку у нас есть встроенный [Windi CSS](https://windicss.org/), вот один из простых способов использовать его:
+=======
+Since we have [UnoCSS](https://unocss.dev/) built-in, here is one simple way for you to reference:
+>>>>>>> b67d676136c95f0c62ed494856d5c2e15901838e
 
 ```html
 <div class="grid grid-cols-2 gap-4">
@@ -24,7 +28,7 @@
 Пойдём дальше, вы можете настроить размер каждого столбца, например:
 
 ```html
-<div class="grid grid-cols-[200px,1fr,10%] gap-4">
+<div class="grid grid-cols-[200px_1fr_10%] gap-4">
 <div>
 
 Первая колонка (200px)
@@ -43,7 +47,11 @@
 </div>
 ```
 
+<<<<<<< HEAD
 Подробнее о [Windi CSS сетках](https://windicss.org/utilities/grid.html).
+=======
+Learn more about [Windi CSS Grids](https://windicss.org/utilities/layout/grid.html).
+>>>>>>> b67d676136c95f0c62ed494856d5c2e15901838e
 
 ## Позиционирование
 
