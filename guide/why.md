@@ -32,7 +32,11 @@ Slidev предоставляет разработчикам первоклас�
 
 ## Скорость
 
+<<<<<<< HEAD
 Slidev разработан на [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) и [Windi CSS](https://windicss.org/), которые в совокупности дают прекрасный опыт разработки. Каждое внесённое вами изменение **мгновенно** отразится на слайдах.
+=======
+Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [UnoCSS](https://unocss.dev/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+>>>>>>> cbaf809403e519ee40e0980dc672c57d90c1dea2
 
 Почитайте подробнее о [нашем техническом стеке](/guide/#tech-stack).
 

@@ -2,7 +2,11 @@
 
 ## Панель навигации
 
+<<<<<<< HEAD
 Переместите указатель мыши в левый нижний угол страницы Slidev, и у вас появится панель навигации.
+=======
+Move your mouse to the bottom left corner of Slidev page to make the navigation bar appear.
+>>>>>>> cbaf809403e519ee40e0980dc672c57d90c1dea2
 
 ![](/screenshots/navbar.png)
 

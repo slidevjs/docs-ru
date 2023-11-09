@@ -12,12 +12,21 @@ $ npm init slidev-theme
 
 Тема может содержать:
 
+<<<<<<< HEAD
 - Глобальные стили
 - Дефолтные конфигурации (шрифты, цветовые схемы, подсветки, и т.д.)
 - Кастомные шаблоны или замена существующих
 - Кастомные компоненты или замена существующих
 - Расширение конфигурации Windi CSS
 - Настройка таких инструментов, как Monaco или Prism
+=======
+- Global styles
+- Provide default configurations (fonts, color schema, highlighters, etc.)
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> cbaf809403e519ee40e0980dc672c57d90c1dea2
 
 ## Соглашения
 
@@ -64,7 +73,7 @@ theme: ./
 // package.json
 {
   "slidev": {
-    "default": {
+    "defaults": {
       "aspectRatio": "16/9",
       "canvasWidth": 980,
       "fonts": {
@@ -120,7 +129,11 @@ Slidev переключает класс `dark` в элементе `html` ст�
 
 В теме также предусмотрены цвета для подсветки синтаксиса. Мы поддерживаем как [Prism](https://prismjs.com/), так и [Shiki](https://github.com/shikijs/shiki). Подробнее в [документации по подсветке синтаксиса](/custom/highlighters).
 
+<<<<<<< HEAD
 Вы можете использовать как один из них, так и оба. Примеры конфигураций дефолтной темы смотрите в [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/styles/prism.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
+=======
+You can support either one of them, or both. Refer to the default theme for configurations examples [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts).
+>>>>>>> cbaf809403e519ee40e0980dc672c57d90c1dea2
 
 Также не забудьте указать поддерживаемую подсветку в вашем `package.json`
 
@@ -128,7 +141,11 @@ Slidev переключает класс `dark` в элементе `html` ст�
 // package.json
 {
   "slidev": {
+<<<<<<< HEAD
     "highlighter": "shiki" // или "prism", или "all"
+=======
+    "highlighter": "shiki" // or "prism" or "both"
+>>>>>>> cbaf809403e519ee40e0980dc672c57d90c1dea2
   }
 }
 ```
