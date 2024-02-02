@@ -1,8 +1,20 @@
+<<<<<<< HEAD
 # Markdown синтаксис
 
 Слайды описываются в **одном markdown-файле** (по умолчанию `./slides.md`).
 
 Вы можете использовать обычный [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), с дополнительной поддержкой встроенного HTML и Vue-компонентов. Также поддерживается стилизация с использованием [Windi CSS](https://windicss.org). Используйте `---` с добавлением новой строки для разделения слайдов.
+=======
+---
+outline: deep
+---
+
+# Markdown Syntax
+
+Slides are written within **a single markdown file** (by default `./slides.md`).
+
+You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [UnoCSS](/custom/config-unocss) is also supported. Use `---` padded with a new line to separate your slides.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ~~~md
 # Slidev
@@ -30,9 +42,15 @@ console.log('Привет, мир!')
 </div>
 ~~~
 
+<<<<<<< HEAD
 ## Front Matter и Шаблоны
 
 Укажите макеты и другие метаданные для каждого слайда, преобразовав разделители в [front matter блоки](https://jekyllrb.com/docs/front-matter/). Каждый frontmatter блок начинается с тройного тире и заканчивается ими же. Тексты между ними представляют собой объекты данных в формате [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Например:
+=======
+## Frontmatter & Layouts
+
+Specify layouts and other metadata for each slide by converting the separators into [frontmatter blocks](https://jekyllrb.com/docs/front-matter/). Each frontmatter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ~~~md
 ---
@@ -47,7 +65,7 @@ layout: cover
 layout: center
 background: './images/background-1.png'
 class: 'text-white'
----​
+---
 
 # Page 2
 
@@ -62,10 +80,42 @@ class: 'text-white'
 
 Подробная информация описана на странице [кастомизации](/custom/).
 
+<<<<<<< HEAD
 ## Блоки кода
+=======
+> The custom syntax might not be compactible with some formatters like Prettier. To improve that, we also support using a direct `yaml` code block to define the frontmatter:
+>
+> ~~~markdown
+> ---
+> layout: cover
+> ---
+>
+> # Slidev
+>
+> This is the cover page.
+>
+> ---
+>
+> ```yaml
+> # The first yaml block will be treated as the frontmatter of that slide
+> layout: center
+> background: './images/background-1.png'
+> class: 'text-white'
+> ```
+>
+> # Page 2
+>
+> This is a page with the layout `center` and a background image.
+> ~~~
+>
+> (Available since v0.44.0)
+
+## Code Blocks
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Одна из главных причин, по которой я создала Slidev – это то, что мой код должен хорошо выглядеть на слайдах. Так, как вы и ожидали, вы можете использовать блоки кода Markdown, чтобы подсветить свой код.
 
+<<<<<<< HEAD
 ~~~ts
 //```ts
 console.log('Привет, мир!')
@@ -73,50 +123,195 @@ console.log('Привет, мир!')
 ~~~
 
 ### Подсветка строк
+=======
+~~~md
+```ts
+console.log('Hello, World!')
+```
+~~~
+
+We support [Prism](https://prismjs.com), [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Мы поддерживаем [Prism](http://prismjs.com) и [Shiki](https://github.com/shiki/shiki) в качестве подсветки синтаксиса. Обратитесь к [разделу подсветки](/custom/highlighters) для получения более подробной информации.
 
+<<<<<<< HEAD
 Чтобы выделить определённые строки, просто добавьте номера строк в скобки `{}`. Нумерация строк начинается с 1.
+=======
+To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1 by default.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
-~~~ts
-//```ts {2,3}
+~~~md
+```ts {2,3}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
+~~~
+
+You can enable line number to all slides by setting `lineNumbers: true` on the config or enable each code block individually by setting `lines:true`. In case you want to disable the numbering for an specific block when `lineNumbers: true` you can set `lines:false` for that block:
+
+~~~md
+```ts {2,3}{lines:true}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+```
+~~~
+
+You can also set the starting line for each code block and highlight the lines accordingly, defaults to 1:
+
+~~~md
+```ts {6,7}{lines:true, startLine:5}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+```
 ~~~
 
 Чтобы изменить выделение в несколько шагов, вы можете использовать `|` для их разделения. Например
 
-~~~ts
-//```ts {2-3|5|all}
+~~~md
+```ts {2-3|5|all}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
 ~~~
 
 Сначала будет выделено `a: Ref<number> | number` и `b: Ref<number> | number`, а затем `return computed(() => unref(a) + unref(b))` после одного клика, и наконец, весь блок. Подробнее в [руководстве анимации по кликам](/guide/animations).
 
+<<<<<<< HEAD
 ### Monaco редактор
+=======
+You can start the highlight at a specific click:
+
+~~~md
+```ts {2-3|5|all}{at:0}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+```
+~~~
+
+This is especially useful when you need to sync different animations (when using `two-cols` layout and list animation for instance).
+You may need to set the [custom clicks count](/guide/animations#custom-clicks-count) for the slide progression to function correctly.
+
+To skip highlighting any lines, you can set the line number to `0`. For example
+
+~~~md {1}
+```ts {0}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+```
+~~~
+
+If the code doesn't fit into one slide, you can pass an extra maxHeight option which will set fixed height
+and enable scrolling
+
+~~~md {1}
+```ts {2|3|7|12}{maxHeight:'100px'}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+/// ...as many lines as you want
+const c = add(1, 2)
+```
+~~~
+
+### TwoSlash Integration
+
+This feature is only available when you [set `highlighter` to `shiki`](/custom/highlighters)
+
+[TwoSlash](https://twoslash.netlify.app/) is a powerful tool for rendering TypeScript code blocks with type information on hover or inlined. It's quite useful for preparing slides for JavaScript/TypeScript-related topics.
+
+To use it, you can add `twoslash` to the code block's language identifier:
+
+~~~md
+```ts twoslash
+import { ref } from 'vue'
+
+const count = ref(0)
+//            ^?
+```
+~~~
+
+It will be rendered as:
+
+```ts twoslash
+import { ref } from 'vue'
+
+const count = ref(0)
+//            ^?
+```
+
+### Monaco Editor
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Всякий раз, когда вы хотите внести какие-либо изменения в презентацию, просто добавьте `{monaco}` после указания языка подсветки - это превратит блок в полнофункциональный Monaco редактор!
 
+<<<<<<< HEAD
 ~~~ts
 //```ts {monaco}
 console.log('ПриветМир')
 //```
+=======
+~~~md
+```ts {monaco}
+console.log('HelloWorld')
+```
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 ~~~
 
 Подробнее в [конфигурации Monaco](/custom/config-monaco).
 
+<<<<<<< HEAD
 ## Встроенные стили
+=======
+#### Monaco Diff
+
+Monaco can also generate a diff between two code blocks. Use `{monaco-diff}` to turn the block into a [diff Monaco editor](https://microsoft.github.io/monaco-editor/playground.html?source=v0.36.1#example-creating-the-diffeditor-multi-line-example) and use `~~~` to separate both original and modified version of the code!
+
+````md
+```ts {monaco-diff}
+This line is removed on the right.
+just some text
+abcd
+efgh
+Some more text
+~~~
+just some text
+abcz
+zzzzefgh
+Some more text.
+This line is removed on the left.
+```
+````
+
+## Embedded Styles
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Вы можете использовать тег `<style>` напрямую в Markdown, чтобы переопределить стили для **текущего слайда**.
 
@@ -134,9 +329,15 @@ h1 {
 # На следующем слайде стили заголовка останутся прежними
 ```
 
+<<<<<<< HEAD
 Тег `<style>` в Markdown всегда является [scoped](https://vue-loader.vuejs.org/guide/scoped-css.html). Чтобы изменить глобальные стили, прочтите [раздел кастомизации](/custom/directory-structure#style).
 
 Работая с [Windi CSS](https://windicss.org), вы можете напрямую использовать вложенные CSS и [directives](https://windicss.org/features/directives.html) (например, `@apply`)
+=======
+`<style>` tag in Markdown is always [scoped](https://vuejs.org/api/sfc-css-features.html#scoped-css). As an outstanding result, a selector with the child combinator (`.a > .b`) is unusable as such; see the previous link. To have global style overrides, check out the [customization section](/custom/directory-structure#style).
+
+Powered by [UnoCSS](/custom/config-unocss), you can directly use nested css and [directives](https://unocss.dev/transformers/directives) (e.g. `--uno:` or `@apply`)
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ```md
 # Slidev
@@ -146,7 +347,7 @@ h1 {
 <style>
 blockquote {
   code {
-    @apply text-teal-500 dark:text-teal-400;
+    --uno: text-teal-500 dark:text-teal-400;
   }
 }
 </style>
@@ -168,7 +369,11 @@ blockquote {
 ![Local Image](/pic.png)
 ```
 
+<<<<<<< HEAD
 Если вы хотите применить кастомные размеры или стили, вы можете вставить их через `<img>` тег 
+=======
+For you want to apply custom sizes or styles, you can convert them to the `<img>` tag
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ```html
 <img src="/pic.png" class="m-40 h-40 rounded shadow" />
@@ -207,7 +412,11 @@ layout: cover
 
 ## Иконки
 
+<<<<<<< HEAD
 Slidev позволяет вам получить доступ практически ко всем популярным наборам иконок с открытым исходным кодом **прямо** в вашем markdown. Работает это через [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) и [Iconify](https://iconify.design/).
+=======
+Slidev allows you to have the accessing to almost all the popular open-source iconsets **directly** in your markdown. Powered by [`unplugin-icons`](https://github.com/antfu/unplugin-icons) and [Iconify](https://iconify.design/).
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Именование следует [Iconify](https://iconify.design/) преобразованию `{collection-name}-{icon-name}`. Например:
 
@@ -312,7 +521,27 @@ layout: two-cols
 Это отобразится слева
 ```
 
+<<<<<<< HEAD
 ## Конфигурации
+=======
+## Import Code Snippets
+
+> Available since v0.47.0
+
+You can import code snippets from existing files via following syntax:
+
+```md
+<<< @/snippets/snippet.js
+```
+
+::: ttp
+The value of `@` corresponds to the source root, the directory where the `slides.md` is located.
+:::
+
+This feature is vendored from VitePress, learn more about it in [VitePress's documentation](https://vitepress.dev/guide/markdown#import-code-snippets).
+
+## Configurations
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Все необходимые конфигурации можно определить в Markdown файле. Например:
 
@@ -334,7 +563,7 @@ background: 'https://source.unsplash.com/1600x900/?nature,water'
 
 Slidev поставляется с встроенной поддержкой LaTeX на базе [KaTeX](https://katex.org/).
 
-<Tweet id="1392246507793915904" />
+<TheTweet id="1392246507793915904" />
 
 ### Строка
 
@@ -348,7 +577,7 @@ $\sqrt{3x-1}+(1+x)^2$
 
 Используйте 2 (`$$`) для блочного рендеринга. В этом режиме используются более крупные символы и результат центрируется.
 
-```md
+```latex
 $$
 \begin{array}{c}
 
@@ -365,7 +594,28 @@ $$
 
 Подробнее: [Демо](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
 
+<<<<<<< HEAD
 ## Диаграммы
+=======
+### LaTex line highlighting
+
+> Available since v0.43.1
+
+To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1 by default.
+
+```latex
+$$ {1|3|all}
+\begin{array}{c}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
+= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} & = 0
+\end{array}
+$$
+```
+
+## Diagrams
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Вы также можете создавать диаграммы / графики из текстовых описаний в вашем Markdown, используя [Mermaid](https://mermaid-js.github.io/mermaid).
 
@@ -484,3 +734,27 @@ src: ./content.md
 src: ./content.md
 ---
 ```
+
+## MDC Syntax
+
+> Available since v0.43.0
+
+Slidev has and experimental support for [MDC (Markdown Components) Syntax](https://content.nuxtjs.org/guide/writing/mdc) powered by [`markdown-it-mdc`](https://github.com/antfu/markdown-it-mdc).
+
+You can enable it by add `mdc: true` to the frontmatter of your markdown file.
+
+```md
+---
+mdc: true
+---
+
+This is a [red text]{style="color:red"} :inline-component{prop="value"}
+
+![](/image.png){width=500px lazy}
+
+::block-component{prop="value"}
+The **default** slot
+::
+```
+
+Learn more about [the syntax](https://content.nuxtjs.org/guide/writing/mdc).
