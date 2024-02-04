@@ -4,10 +4,13 @@
 
 > Поскольку темы могут переопределять поведение макетов, лучший способ узнать точное использование, параметры и примеры - обратиться к их документации.
 
-
 ### `center`
 
+<<<<<<< HEAD
 Отображает содержимое в центре экрана.
+=======
+Displays the content in the middle of the screen.
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518
 
 ### `cover`
 
@@ -15,7 +18,11 @@
 
 ### `default`
 
+<<<<<<< HEAD
 Самый простой макет для отображения любого вида контента.
+=======
+The most basic layout, to display any kind of content.
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518
 
 ### `end`
 
@@ -80,6 +87,24 @@ image: ./path/to/the/image
 ---
 ```
 
+You can change the default background size (`cover`) by adding the `backgroundSize` attribute:
+
+```yaml
+---
+layout: image
+image: ./path/to/the/image
+backgroundSize: contain
+---
+```
+
+```yaml
+---
+layout: image-left
+image: ./path/to/the/image
+backgroundSize: 20em 70%
+---
+```
+
 
 ### `iframe-left`
 
@@ -132,7 +157,6 @@ url: https://github.com/slidevjs/slidev
 ---
 ```
 
-
 ### `intro`
 
 Представление презентации, обычно с указанием названия презентации, краткого описания, автора и т.д.
@@ -159,7 +183,6 @@ url: https://github.com/slidevjs/slidev
 
 #### Использование
 
-
 ```md
 ---
 layout: two-cols
@@ -176,7 +199,37 @@ layout: two-cols
 Это отобразится справа
 ```
 
+<<<<<<< HEAD
 ## Кастомные шаблоны
+=======
+### `two-cols-header`
+
+Separates the upper and lower lines of the page content, and the second line separates the left and right columns.
+
+#### Usage
+
+```md
+---
+layout: two-cols-header
+---
+
+This spans both
+
+::left::
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+```
+
+## Custom Layouts
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518
 
 Создайте папку `layouts/` в корне вашего проекта, и просто вставьте в неё ваши кастомные Vue-компоненты.
 
