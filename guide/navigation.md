@@ -2,7 +2,11 @@
 
 ## Панель навигации
 
+<<<<<<< HEAD
 Переместите указатель мыши в левый нижний угол страницы Slidev, и у вас появится панель навигации.
+=======
+Move your mouse to the bottom left corner of Slidev page to make the navigation bar appear.
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518
 
 ![](/screenshots/navbar.png)
 
@@ -28,6 +32,10 @@
 
 ## Обзор слайдов
 
+<<<<<<< HEAD
 Нажав на <kbd>o</kbd> или кликнув на кнопку <carbon-apps class="inline-icon-btn" /> в панели навигации, вы можете просмотреть свои слайды и без труда переключиться на них
+=======
+By pressing <kbd>o</kbd> or clicking the <carbon-apps class="inline-icon-btn"/> button in the navigation bar, you can have the overview of your slides so you can jump between them easily.
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518
 
 ![](/screenshots/slides-overview.png)

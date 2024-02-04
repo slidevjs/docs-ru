@@ -4,7 +4,11 @@
 
 Поскольку Slidev использует в своей работе интернет, вы можете использовать любые макеты сетки по своему усмотрению. [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [flexboxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), или даже [Masonry](https://css-tricks.com/native-css-masonry-layout-in-css-grid/).
 
+<<<<<<< HEAD
 Поскольку у нас есть встроенный [Windi CSS](https://windicss.org/), вот один из простых способов использовать его:
+=======
+Since we have [UnoCSS](https://unocss.dev/) built-in, here is one simple way for you to reference:
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518
 
 ```html
 <div class="grid grid-cols-2 gap-4">
@@ -24,7 +28,7 @@
 Пойдём дальше, вы можете настроить размер каждого столбца, например:
 
 ```html
-<div class="grid grid-cols-[200px,1fr,10%] gap-4">
+<div class="grid grid-cols-[200px_1fr_10%] gap-4">
 <div>
 
 Первая колонка (200px)
@@ -43,9 +47,13 @@
 </div>
 ```
 
+<<<<<<< HEAD
 Подробнее о [Windi CSS сетках](https://windicss.org/utilities/grid.html).
 
 ## Позиционирование
+=======
+## Positioning
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518
 
 Слайды имеют фиксированный размер (по умолчанию `980x552px`) и масштабируются в соответствии с экраном пользователя. Вы можете безопасно использовать абсолютное позиционирование на своих слайдах, поскольку они будут масштабироваться вместе с экраном.
 
@@ -96,7 +104,7 @@ h1 {
 Вы можете указать собственные глобальные стили, например, создав `./style.css`
 
 ```css
-/* style.css */ 
+/* style.css */
 
 h1 {
   font-size: 10em !important;
