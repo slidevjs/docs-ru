@@ -9,12 +9,21 @@
 ```yaml
 ---
 fonts:
+<<<<<<< HEAD
   # основной текст
   sans: 'Robot'
   # использование с css классом `font-serif` от windicss
   serif: 'Robot Slab'
   # для блоков кода, inline-кода и т.д.
   mono: 'Fira Code'
+=======
+  # basically the text
+  sans: Robot
+  # use with `font-serif` css class from UnoCSS
+  serif: Robot Slab
+  # for code blocks, inline code, etc.
+  mono: Fira Code
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 ---
 ```
 
@@ -24,15 +33,24 @@ fonts:
 
 ## Локальные шрифты
 
+<<<<<<< HEAD
 По умолчанию Slidev считает, что все шрифты, указанные в конфигурациях `fonts`, взяты из Google Fonts. Если вы хотите использовать локальные шрифты, укажите `fonts.local`, чтобы отключить автоматический импорт.
+=======
+By default, Slidev assumes all the fonts specified via `fonts` configurations come from Google Fonts. If you want to use local fonts, specify the `fonts.local` to opt-out the auto-importing.
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 ```yaml
 ---
 fonts:
   # вы можете использовать `,` чтобы использовать несколько шрифтов для fallback'а (как font-family в css)
   sans: 'Helvetica Neue,Robot'
+<<<<<<< HEAD
   # пометить 'Helvetica Neue' как локальный шрифт
   local: 'Helvetica Neue'
+=======
+  # mark 'Helvetica Neue' as local font
+  local: Helvetica Neue
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 ---
 ```
 
@@ -43,8 +61,13 @@ fonts:
 ```yaml
 ---
 fonts:
+<<<<<<< HEAD
   sans: 'Robot'
   # по умолчанию
+=======
+  sans: Robot
+  # default
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
   weights: '200,400,600'
   # импорт курсивных шрифтов, по умолчанию `false`
   italic: false
@@ -60,13 +83,17 @@ fonts:
 ```yaml
 ---
 fonts:
-  sans: 'Robot'
-  serif: 'Robot Slab'
-  mono: 'Fira Code'
+  sans: Robot
+  serif: Robot Slab
+  mono: Fira Code
 ---
 ```
 
+<<<<<<< HEAD
 сбилдится в
+=======
+will result in
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 ```css
 .font-sans {
@@ -100,8 +127,6 @@ fonts:
 ```yaml
 ---
 fonts:
-  provide: 'none'
+  provider: none
 ---
 ```
-
-
