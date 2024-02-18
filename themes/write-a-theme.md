@@ -12,12 +12,21 @@ $ npm init slidev-theme
 
 Тема может содержать:
 
+<<<<<<< HEAD
 - Глобальные стили
 - Дефолтные конфигурации (шрифты, цветовые схемы, подсветки, и т.д.)
 - Кастомные шаблоны или замена существующих
 - Кастомные компоненты или замена существующих
 - Расширение конфигурации Windi CSS
 - Настройка таких инструментов, как Monaco или Prism
+=======
+- Global styles
+- Provide default configurations (fonts, color schema, highlighters, etc.)
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> 081241c66e4b17a1a524facc9585f0b6f74f5699
 
 ## Соглашения
 
@@ -52,7 +61,11 @@ theme: ./
 
 Чтобы опубликовать свою тему, просто запустите `npm publish`, и всё. Процесс сборки не требуется (это означает, что вы можете напрямую публиковать файлы `.vue` и` .ts`, Slidev достаточно умён, чтобы понять их).
 
+<<<<<<< HEAD
 Пункты добавления темы следуют тем же соглашениям, что и локальная настройка, подробнее в [документации по соглашениям об именовании](/custom/).
+=======
+Theme contribution points follow the same conventions as local customization, please refer to [the docs for the naming conventions](/custom/).
+>>>>>>> 081241c66e4b17a1a524facc9585f0b6f74f5699
 
 ## Конфигурации по умолчанию
 
@@ -64,7 +77,7 @@ theme: ./
 // package.json
 {
   "slidev": {
-    "default": {
+    "defaults": {
       "aspectRatio": "16/9",
       "canvasWidth": 980,
       "fonts": {
@@ -118,9 +131,15 @@ Slidev переключает класс `dark` в элементе `html` ст�
 
 ### Подсветка
 
+<<<<<<< HEAD
 В теме также предусмотрены цвета для подсветки синтаксиса. Мы поддерживаем как [Prism](https://prismjs.com/), так и [Shiki](https://github.com/shikijs/shiki). Подробнее в [документации по подсветке синтаксиса](/custom/highlighters).
 
 Вы можете использовать как один из них, так и оба. Примеры конфигураций дефолтной темы смотрите в [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/styles/prism.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
+=======
+Syntax highlighting colors are also provided in the theme. We support both [Prism](https://prismjs.com/), [Shiki](https://github.com/shikijs/shiki). For more information please refer to [the syntax highlighting docs](/custom/highlighters).
+
+You can support either one of them, or both. Refer to the default theme for configurations examples [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts).
+>>>>>>> 081241c66e4b17a1a524facc9585f0b6f74f5699
 
 Также не забудьте указать поддерживаемую подсветку в вашем `package.json`
 
@@ -128,7 +147,11 @@ Slidev переключает класс `dark` в элементе `html` ст�
 // package.json
 {
   "slidev": {
+<<<<<<< HEAD
     "highlighter": "shiki" // или "prism", или "all"
+=======
+    "highlighter": "shiki" // or "prism" or "both"
+>>>>>>> 081241c66e4b17a1a524facc9585f0b6f74f5699
   }
 }
 ```
