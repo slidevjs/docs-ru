@@ -6,7 +6,11 @@
 
 ## Встроенный редактор
 
+<<<<<<< HEAD
 Slidev поставляется со встроенным редактором [CodeMirror](https://codemirror.net/), который мгновенно перезагружает и сохраняет изменения в вашем файле.
+=======
+Slidev comes with an integrated [CodeMirror](https://codemirror.net/) editor that will instantly reload and save the changes to your file.
+>>>>>>> 1d54c861642c679ca01887a28e187047fedcbc83
 
 Нажмите на кнопку <carbon-edit class="inline-icon-btn"/>, чтобы открыть его.
 
@@ -40,4 +44,4 @@ Slidev поставляется со встроенным редактором [
 
 ![](https://user-images.githubusercontent.com/11247099/116809994-cc2caa00-ab73-11eb-879f-60585747c3c9.png)
 
-<Tweet id="1395333405345148930" />
+<TheTweet id="1395333405345148930" />
