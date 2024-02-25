@@ -9,12 +9,21 @@
 ```yaml
 ---
 fonts:
+<<<<<<< HEAD
   # основной текст
   sans: 'Robot'
   # использование с css классом `font-serif` от windicss
   serif: 'Robot Slab'
   # для блоков кода, inline-кода и т.д.
   mono: 'Fira Code'
+=======
+  # basically the text
+  sans: Robot
+  # use with `font-serif` css class from UnoCSS
+  serif: Robot Slab
+  # for code blocks, inline code, etc.
+  mono: Fira Code
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 ---
 ```
 
@@ -24,15 +33,24 @@ fonts:
 
 ## Локальные шрифты
 
+<<<<<<< HEAD
 По умолчанию Slidev считает, что все шрифты, указанные в конфигурациях `fonts`, взяты из Google Fonts. Если вы хотите использовать локальные шрифты, укажите `fonts.local`, чтобы отключить автоматический импорт.
+=======
+By default, Slidev assumes all the fonts specified via `fonts` configurations come from Google Fonts. If you want to use local fonts, specify the `fonts.local` to opt-out the auto-importing.
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 
 ```yaml
 ---
 fonts:
   # вы можете использовать `,` чтобы использовать несколько шрифтов для fallback'а (как font-family в css)
   sans: 'Helvetica Neue,Robot'
+<<<<<<< HEAD
   # пометить 'Helvetica Neue' как локальный шрифт
   local: 'Helvetica Neue'
+=======
+  # mark 'Helvetica Neue' as local font
+  local: Helvetica Neue
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 ---
 ```
 
@@ -43,8 +61,13 @@ fonts:
 ```yaml
 ---
 fonts:
+<<<<<<< HEAD
   sans: 'Robot'
   # по умолчанию
+=======
+  sans: Robot
+  # default
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
   weights: '200,400,600'
   # импорт курсивных шрифтов, по умолчанию `false`
   italic: false
@@ -60,13 +83,17 @@ fonts:
 ```yaml
 ---
 fonts:
-  sans: 'Robot'
-  serif: 'Robot Slab'
-  mono: 'Fira Code'
+  sans: Robot
+  serif: Robot Slab
+  mono: Fira Code
 ---
 ```
 
+<<<<<<< HEAD
 сбилдится в
+=======
+will result in
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 
 ```css
 .font-sans {
@@ -86,7 +113,7 @@ fonts:
 ---
 fonts:
   mono: 'Fira Code, monospace'
-  fallback: false
+  fallbacks: false
 ---
 ```
 
@@ -100,8 +127,6 @@ fonts:
 ```yaml
 ---
 fonts:
-  provide: 'none'
+  provider: none
 ---
 ```
-
-
