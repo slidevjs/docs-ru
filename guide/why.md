@@ -2,7 +2,11 @@
 
 Есть множество богатых функционалом, универсальных WYSIWYG редакторов презентаций, например [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) или [Apple Keynote](https://www.apple.com/keynote/). Они не плохо работают для создания красивых презентаций с анимациями, графиками, и множества других штук, оставаясь при этом очень интуитивными и лёгкими в изучении. Так зачем вообще нужен Slidev?
 
+<<<<<<< HEAD
 Slidev направлен на поддержку гибкости и интерактивности для разработчиков, чтобы делать их презентации более интересными, выразительными и привлекательными. Используя инструменты и технологии, с которыми они уже знакомы. 
+=======
+Slidev aims to provide the flexibility and interactivity for developers to make their presentations even more interesting, expressive, and attractive by using the tools and technologies they are already familiar with.
+>>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
 
 При работе с WYSIWYG редакторами очень легко отвлечься на варианты стилизации. Slidev исправляет это, разделяя контент и визуальную часть. Что позволяет вам сфокусироваться на чем-то одном, а также даёт возможность переиспользовать темы из сообщества. Slidev не стремится полностью заменить другие конструкторы презентаций. Скорее, он фокусируется на разнообразии сообщества разработчиков новыми возможностями.
 
@@ -32,7 +36,11 @@ Slidev предоставляет разработчикам первоклас�
 
 ## Скорость
 
+<<<<<<< HEAD
 Slidev разработан на [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) и [Windi CSS](https://windicss.org/), которые в совокупности дают прекрасный опыт разработки. Каждое внесённое вами изменение **мгновенно** отразится на слайдах.
+=======
+Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [UnoCSS](https://unocss.dev/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+>>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
 
 Почитайте подробнее о [нашем техническом стеке](/guide/#tech-stack).
 
@@ -66,6 +74,4 @@ $ npm init slidev
 
 Или посмотрите демо:
 
-<div class="aspect-9/16 relative">
-<iframe class="rounded w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe class="aspect-16/9 rounded-xl w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
