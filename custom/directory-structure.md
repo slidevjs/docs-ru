@@ -9,11 +9,19 @@ your-slidev/
   ├── components/       # кастомные компоненты
   ├── layouts/          # кастомные шаблоны
   ├── public/           # static assets
+<<<<<<< HEAD
   ├── setup/            # кастомные настройки / хуки
   ├── styles/           # кастомные стили
   ├── index.html        # инъекции в index.html
   ├── slides.md         # описание слайдов
   └── vite.config.ts    # расширение конфигурации vite
+=======
+  ├── setup/            # custom setup / hooks
+  ├── styles/           # custom style
+  ├── index.html        # injections to index.html
+  ├── slides.md         # the main slides entry
+  └── vite.config.ts    # extending vite config
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 ```
 
 Все они необязательны.
@@ -48,7 +56,11 @@ your-slidev/
 </hello-world>
 ```
 
+<<<<<<< HEAD
 Эта функция работает благодаря [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components).
+=======
+This feature is powered by [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components), learn more there.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Slidev также предоставляет вам некоторые [встроенные компоненты](/builtin/components).
 
@@ -115,18 +127,24 @@ import './code.css'
 import './layouts.css'
 ```
 
+<<<<<<< HEAD
 Стили будут обрабатываться через [Windi CSS](http://windicss.org/) и [PostCSS](https://postcss.org/), поэтому вы можете использовать вложенные css стили и [at-директивы](https://windicss.org/features/directives.html) прямо из коробки. Например:
+=======
+Styles will be processed by [UnoCSS](https://unocss.dev/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://unocss.dev/transformers/directives#apply) out-of-box. For example:
+
+<!-- eslint-skip -->
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 ```less
 .slidev-layout {
-  @apply px-14 py-10 text-[1.1rem];
+  --uno: px-14 py-10 text-[1.1rem];
 
   h1, h2, h3, h4, p, div {
-    @apply select-none;
+    --uno: select-none;
   }
 
   pre, code {
-    @apply select-text;
+    --uno: select-text;
   }
 
   a {
@@ -135,7 +153,11 @@ import './layouts.css'
 }
 ```
 
+<<<<<<< HEAD
 [Подробнее о синтаксисе](https://windicss.org/features/directives.html).
+=======
+[Learn more about the syntax](https://unocss.dev/transformers/directives#apply).
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 ## `index.html`
 
@@ -183,5 +205,9 @@ import './layouts.css'
 
 Соглашения: `global-top.vue` | `global-bottom.vue`
 
+<<<<<<< HEAD
 Подробнее: [Глобальные слои](/custom/global-layers)
 
+=======
+Learn more: [Global Layers](/custom/global-layers)
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
