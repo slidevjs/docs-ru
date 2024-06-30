@@ -4,10 +4,13 @@
 
 > Поскольку темы могут переопределять поведение макетов, лучший способ узнать точное использование, параметры и примеры - обратиться к их документации.
 
-
 ### `center`
 
+<<<<<<< HEAD
 Отображает содержимое в центре экрана.
+=======
+Displays the content in the middle of the screen.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ### `cover`
 
@@ -15,7 +18,11 @@
 
 ### `default`
 
+<<<<<<< HEAD
 Самый простой макет для отображения любого вида контента.
+=======
+The most basic layout, to display any kind of content.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ### `end`
 
@@ -39,8 +46,13 @@
 ---
 layout: image-left
 
+<<<<<<< HEAD
 # источник изображения
 image: ./path/to/the/image
+=======
+# the image source
+image: /path/to/the/image
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 # пользовательское имя класса для содержимого
 class: my-cool-content-on-the-right
@@ -57,8 +69,13 @@ class: my-cool-content-on-the-right
 ---
 layout: image-right
 
+<<<<<<< HEAD
 # источник изображения
 image: ./path/to/the/image
+=======
+# the image source
+image: /path/to/the/image
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 # пользовательское имя класса для содержимого
 class: my-cool-content-on-the-left
@@ -75,11 +92,33 @@ class: my-cool-content-on-the-left
 ---
 layout: image
 
+<<<<<<< HEAD
 # источник изображения
 image: ./path/to/the/image
+=======
+# the image source
+image: /path/to/the/image
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 ---
 ```
 
+You can change the default background size (`cover`) by adding the `backgroundSize` attribute:
+
+```yaml
+---
+layout: image
+image: /path/to/the/image
+backgroundSize: contain
+---
+```
+
+```yaml
+---
+layout: image-left
+image: /path/to/the/image
+backgroundSize: 20em 70%
+---
+```
 
 ### `iframe-left`
 
@@ -132,7 +171,6 @@ url: https://github.com/slidevjs/slidev
 ---
 ```
 
-
 ### `intro`
 
 Представление презентации, обычно с указанием названия презентации, краткого описания, автора и т.д.
@@ -159,7 +197,6 @@ url: https://github.com/slidevjs/slidev
 
 #### Использование
 
-
 ```md
 ---
 layout: two-cols
@@ -176,7 +213,37 @@ layout: two-cols
 Это отобразится справа
 ```
 
+<<<<<<< HEAD
 ## Кастомные шаблоны
+=======
+### `two-cols-header`
+
+Separates the upper and lower lines of the page content, and the second line separates the left and right columns.
+
+#### Usage
+
+```md
+---
+layout: two-cols-header
+---
+
+This spans both
+
+::left::
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+```
+
+## Custom Layouts
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Создайте папку `layouts/` в корне вашего проекта, и просто вставьте в неё ваши кастомные Vue-компоненты.
 

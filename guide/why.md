@@ -2,7 +2,11 @@
 
 Есть множество богатых функционалом, универсальных WYSIWYG редакторов презентаций, например [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) или [Apple Keynote](https://www.apple.com/keynote/). Они не плохо работают для создания красивых презентаций с анимациями, графиками, и множества других штук, оставаясь при этом очень интуитивными и лёгкими в изучении. Так зачем вообще нужен Slidev?
 
+<<<<<<< HEAD
 Slidev направлен на поддержку гибкости и интерактивности для разработчиков, чтобы делать их презентации более интересными, выразительными и привлекательными. Используя инструменты и технологии, с которыми они уже знакомы. 
+=======
+Slidev aims to provide the flexibility and interactivity for developers to make their presentations even more interesting, expressive, and attractive by using the tools and technologies they are already familiar with.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 При работе с WYSIWYG редакторами очень легко отвлечься на варианты стилизации. Slidev исправляет это, разделяя контент и визуальную часть. Что позволяет вам сфокусироваться на чем-то одном, а также даёт возможность переиспользовать темы из сообщества. Slidev не стремится полностью заменить другие конструкторы презентаций. Скорее, он фокусируется на разнообразии сообщества разработчиков новыми возможностями.
 
@@ -26,13 +30,21 @@ Slidev использует расширенный Markdown формат для 
 
 ## Удобство разработки
 
+<<<<<<< HEAD
 Slidev предоставляет разработчикам первоклассную поддержку фрагментов кода. Он поддерживает как [Prism](https://prismjs.com/), так и [Shiki](https://github.com/shikijs/shiki), чтобы добиться идеальной pixel-perfect подсветки синтаксиса, при этом сохраняя возможность изменять код в любое время. Благодаря встроенному редактору [Monaco](https://microsoft.github.io/monaco-editor/), он также даёт вам возможность выполнять кодирование / демонстрацию в реальном времени в вашей презентации с автозаполнением, наведением курсора и даже с поддержкой проверки типов TypeScript.
+=======
+Slidev provides first-class support for code snippets for developers. It supports [Shiki](https://github.com/shikijs/shiki) to get pixel-perfect syntax highlighting, while still being able to modify the code at any time. With [Monaco editor](https://microsoft.github.io/monaco-editor/) built-in, it also empowers you to do live coding / demonstration in your presentation with autocompletion, type hovering, and even TypeScript type check support.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Узнайте больше о [подсветки](/custom/highlighters) и [конфигурации Monaco](/custom/config-monaco).
 
 ## Скорость
 
+<<<<<<< HEAD
 Slidev разработан на [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) и [Windi CSS](https://windicss.org/), которые в совокупности дают прекрасный опыт разработки. Каждое внесённое вами изменение **мгновенно** отразится на слайдах.
+=======
+Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [UnoCSS](https://unocss.dev/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Почитайте подробнее о [нашем техническом стеке](/guide/#tech-stack).
 
@@ -48,7 +60,11 @@ Slidev обеспечивает встроенную запись и просм�
 
 ## Портативность
 
+<<<<<<< HEAD
 Экспортируйте ваши слайды в PDF, PNGs, или даже a hostable Single-page Application (SPA) with a single command, and share them anywhere.
+=======
+Export your slides into PDF, PPTX, PNGs, or even a hostable Single-page Application (SPA) with a single command, and share them anywhere.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Read more about that in the [exporting docs](/guide/exporting).
 
@@ -66,6 +82,4 @@ $ npm init slidev
 
 Или посмотрите демо:
 
-<div class="aspect-9/16 relative">
-<iframe class="rounded w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe class="aspect-16/9 rounded-xl w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
